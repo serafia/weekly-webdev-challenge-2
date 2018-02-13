@@ -1,9 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Cahee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<header class="d-flex  flex-column justify-content-between header">
+		
+<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+  				<div class="collapse navbar-collapse justify-content-end" id="myNavigation">
+  					<a href="#home" class="mx-3 px-0 text-uppercase nav-link">home<span class="nav-link_line"></span></a>
+  					<a href="#about" class="mx-3 px-0 text-uppercase nav-link">about<span class="nav-link_line"></span></a>
+  					<a href="#services" class="mx-3 px-0 text-uppercase nav-link">services<span class="nav-link_line"></span></a>
+  					<a href="#gallery" class="mx-3 px-0 text-uppercase nav-link">gallery<span class="nav-link_line"></span></a>
+  					<a href="#blog" class="mx-3 px-0 text-uppercase nav-link">blog<span class="nav-link_line"></span></a>
+  					<a href="#contact" class="ml-3 px-0 text-uppercase nav-link">contact<span class="nav-link_line"></span></a>
+  				</div>
+			</div>
+		</nav>
 
+<!-- Jumbotron -->
+		<div class="jumbotron-fluid d-flex flex-column justify-content-center">
+			<div class="container">
+				<div class="jumbotron-text">
+					<h1 class="jumbotron-text_head">Fresh Life</h1>
+					<p class="jumbotron-text_p">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="btn text-uppercase jumbotron-text_btn">get free now</button>
+				</div>
+			</div>			
+		</div>
+		<div class="container">
+			<div class="justify-content-center d-flex align-items-end justify-content-center scroll">
+				<img src="img/scroll.png" class="scroll_img">
+			</div>
+		</div>		
+	</header>
+
+<!-- About Us -->
+	<section id="about" class="about-us">
+		<div class="container">
+			<div class="d-flex align-items-center about">
+				<div class="about-image">
+					<img src="img/cup.png" class="about-image_img">
+				</div>
+				<div class="about-text">
+					<h2 class="about-text_head">About Us</h2>
+					<p class="about-text_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					<p class="about-text_p">Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- Our Services -->
+	<section id="services" class="our-services">
+		<div class="container">
+			<div class="d-flex align-items-center justify-content-between services">
+				<div class="d-flex flex-column justify-content-center services-buttons">
+					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Online Shopping</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon1.png"></button></div>
+					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Quality Product</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon2.png"></button></div>
+					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Domestic & International Delivery</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon3.png"></button></div>
+					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Well Organized</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon4.png"></button></div>
+				</div>
+				<div class=" d-flex align-items-center justify-content-end services-image">
+					<h2 class="mb-0 mt-1 services-image_head">Our Services</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Gallery -->
+	<section id="gallery" class="gallery">
+		<div class="container">
+			<div class="gallery-text">
+				<h2 class="gallery-text_head">Gallery</h2>
+				<p class="gallery-text_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco.</p>
+			</div>
+			<div class="d-flex justify-content-between gallery-box1">
+				<div class="gallery-box1_image1">
+					<img src="img/gallery1.png" class="gallery-img gallery-box1_image1-img">
+				</div>
+				<div class="d-flex flex-column  justify-content-between gallery-box1_image2">
+					<img src="img/gallery2.png" class="img-fluid gallery-img gallery-box1_image2-img">
+					<img src="img/gallery3.png" class="img-fluid gallery-img gallery-box1_image2-img">
+				</div>
+			</div>
+			<div class="d-flex justify-content-between gallery-box2">
+				<img src="img/gallery4.png" class="img-fluid gallery-img gallery-box2_img">
+				<img src="img/gallery5.png" class="img-fluid gallery-img gallery-box2_img">				
+			</div>
+			<div class="d-flex justify-content-center gallery-button">
+				<button class="btn text-uppercase gallery-button_btn">view more</button>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- Subscribe To Us -->
+	<section id="subscribe" class="d-flex align-items-center subscribe-to-us">
+		<div class="container">
+			<div class="subscribe-box">
+				<h2 class="subscribe-box_head">Subscribe To Us</h2>
+				<p class="subscribe-box_p">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>				
+				<form class="subscribe-box_form">
+					<input class="subscribe-box_form-input" type="email" name="email" placeholder="Your email adress..." required>
+					<button type="submit" class="btn text-uppercase subscribe-box_form-btn">subscribe</button>
+				</form>				
+			</div>
+		</div>
+	</section>
+
+<!-- Blog -->
+	<section id="blog">
+		<div class="container"></div>
+	</section>
+
+<!-- Contact -->
+	<section id="contact">
+		<div class="container"></div>
+	</section>
+
+<!-- Footer -->
+	<footer>
+		<div class="container"></div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
