@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+/* animations */
+@keyframes navLink {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.container {
+  max-width: 1200px; }
+
+.btn {
+  width: 200px;
+  height: 55px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300; }
+
+h2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+p {
+  line-height: 28px;
+  font-size: 17px; }
+
+.header {
+  height: 100vh;
+  background: #F9F8FB url("../img/bg_header.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  /* navigation */
+  /* jumbotron */ }
+  .header .navbar {
+    min-height: 145px; }
+    .header .navbar .nav-link {
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      color: #000;
+      position: relative; }
+      .header .navbar .nav-link_line {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 0;
+        left: 0;
+        background-color: red;
+        display: none; }
+      .header .navbar .nav-link:hover .nav-link_line {
+        display: block;
+        animation: navLink 0.5s 1; }
+  .header .jumbotron-fluid {
+    height: 70%; }
+    .header .jumbotron-fluid .jumbotron-text {
+      width: 31.75%; }
+      .header .jumbotron-fluid .jumbotron-text_head {
+        font-size: 58px;
+        font-weight: 900;
+        margin: 0;
+        line-height: 48px; }
+      .header .jumbotron-fluid .jumbotron-text_p {
+        margin: 30px 0; }
+      .header .jumbotron-fluid .jumbotron-text_btn {
+        background-color: #FE6033; }
+  .header .scroll {
+    margin-bottom: 70px; }
+
+/* about us */
+.about-us {
+  background-color: #01BFBF;
+  min-height: 700px; }
+  .about-us .about {
+    padding-top: 71px; }
+    .about-us .about-image_img {
+      filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4)); }
+    .about-us .about-text {
+      margin-left: 100px;
+      margin-bottom: 20px;
+      color: #fff; }
+      .about-us .about-text_head {
+        line-height: 75px; }
+      .about-us .about-text_p {
+        margin-bottom: 12px; }
+
+/* our services */
+.our-services {
+  min-height: 790px;
+  background-color: #70C0FF; }
+  .our-services .services {
+    padding-top: 100px; }
+    .our-services .services-buttons {
+      padding-top: 100px;
+      padding-left: 85px; }
+      .our-services .services-buttons-box {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
+        margin-bottom: 20px; }
+        .our-services .services-buttons-box_btn {
+          cursor: pointer;
+          border: none;
+          background-color: #fff; }
+        .our-services .services-buttons-box_btn-text {
+          width: 300px;
+          height: 100px;
+          font-weight: 700;
+          padding-left: 15px;
+          padding-right: 15px;
+          font-size: 18px; }
+        .our-services .services-buttons-box_btn-icon {
+          width: 100px;
+          height: 100px;
+          border-left: 1px solid #000; }
+    .our-services .services-image {
+      width: 560px;
+      height: 530px;
+      background: url("../img/tomatoes.png") right no-repeat; }
+      .our-services .services-image_head {
+        color: #fff; }
+
+/* gallery */
+.gallery {
+  background-color: #FEE92E;
+  min-height: 1535px; }
+  .gallery .gallery-text {
+    padding-top: 90px;
+    text-align: center; }
+    .gallery .gallery-text_p {
+      padding: 0 300px 45px;
+      margin: 0; }
+  .gallery .gallery-box1 {
+    margin-bottom: 25px; }
+    .gallery .gallery-box1_image1-img {
+      width: 745px;
+      height: 560px; }
+    .gallery .gallery-box1_image2-img {
+      width: 400px;
+      height: 267px; }
+  .gallery .gallery-box2 {
+    margin-bottom: 50px; }
+    .gallery .gallery-box2_img {
+      width: 572px;
+      height: 420px; }
+  .gallery .gallery-img {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6)); }
+  .gallery .gallery-button_btn {
+    background-color: #5685A3; }
+
+/* subscribe to us */
+.subscribe-to-us {
+  min-height: 500px;
+  background: url("../img/bg_subscribe.png") center no-repeat; }
+  .subscribe-to-us .subscribe-box {
+    margin-bottom: 38px; }
+    .subscribe-to-us .subscribe-box_head {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0;
+      line-height: 48px; }
+    .subscribe-to-us .subscribe-box_p {
+      width: 50%;
+      margin-top: 25px;
+      margin-bottom: 30px; }
+    .subscribe-to-us .subscribe-box_form-input {
+      width: 570px;
+      height: 55px;
+      padding: 15px;
+      border: 1px solid #000;
+      opacity: 0.7;
+      font-size: 15px; }
+    .subscribe-to-us .subscribe-box_form-btn {
+      width: 170px;
+      height: 55px;
+      margin-left: 25px;
+      background-color: #97BA2C; }
