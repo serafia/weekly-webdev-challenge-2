@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+
+
+/* animations */
+@keyframes navLink {
+	from { width: 0;}
+	to { width: 100%;}
+}
+
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+.container {
+	max-width: 1200px;
+}
+.btn {
+	width: 200px;
+	height: 55px;
+	cursor: pointer;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+	border-radius: 0;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+h2 {
+	font-size: 90px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+p {
+	line-height: 28px;
+	font-size: 17px;
+}
+
+.header {
+	height: 100vh;
+	background: #F9F8FB url('../img/bg_header.png');
+	background-position: top;
+	background-repeat: no-repeat;
+
+/* navigation */
+	.navbar {
+		min-height: 145px;
+		.nav-link {
+			font-weight: 700;
+			letter-spacing: -0.4px;
+			color: #000;
+			position: relative;
+			&_line{
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				top: 0;
+				left: 0;
+				background-color: red;
+				display: none;
+			} 
+			&:hover .nav-link_line {
+			display: block;
+			animation: navLink 0.5s 1;
+			}
+		}
+	}
+/* jumbotron */
+	.jumbotron-fluid {
+		height: 70%;
+		.jumbotron-text {
+			width: 31.75%;
+			&_head {
+				font-size: 58px;
+				font-weight: 900;
+				margin: 0;
+				line-height: 48px;
+			}
+			&_p {
+				margin: 30px 0;
+			}
+			&_btn {
+				background-color: #FE6033;				
+			}
+		}
+	}
+	.scroll {
+		margin-bottom: 70px;
+	}
+}
+
+
+/* about us */
+
+.about-us {
+	background-color: #01BFBF;
+	min-height: 700px;
+	.about {
+		padding-top: 71px;
+		&-image {	
+
+			&_img {
+				filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
+			}
+		}
+		&-text {
+			margin-left: 100px;
+			margin-bottom: 20px;
+			color: #fff;
+			&_head {
+				line-height: 75px;
+			}			
+			&_p {				
+				margin-bottom: 12px;
+			}
+		}
+	}
+}
+
+/* our services */
+
+.our-services {
+	min-height: 790px;
+	background-color: #70C0FF;
+	.services {
+		padding-top: 100px;
+		&-buttons {
+				padding-top: 100px;
+				padding-left: 85px;
+			&-box {
+				width: 400px;
+				height: 100px;
+				display: flex;
+				box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
+				margin-bottom: 20px;
+				&_btn {
+					cursor: pointer;
+					border: none;
+					background-color: #fff;
+				}
+				&_btn-text{
+					width: 300px;
+					height: 100px;
+					font-weight: 700;
+					padding-left: 15px;
+					padding-right: 15px;
+					font-size: 18px;
+				}
+				&_btn-icon {
+					width: 100px;
+					height: 100px;	
+					border-left: 1px solid #000;
+				}
+			}
+		}
+		&-image {
+			width: 560px;
+			height: 530px;
+			background: url('../img/tomatoes.png') right no-repeat;
+			&_head {
+				color: #fff;
+			}
+		}
+	}
+}
+
+/* gallery */
+
+.gallery {
+	background-color: #FEE92E;
+	min-height: 1535px;
+	.gallery-text {
+		padding-top: 90px;
+		text-align: center;
+		&_p {
+			padding: 0 300px 45px;
+			margin: 0;
+		}
+	}
+	.gallery-box1 {
+		margin-bottom: 25px;
+		&_image1 {
+			&-img {
+				width: 745px;
+				height: 560px;
+			}
+		}
+		&_image2 {
+			&-img {
+				width: 400px;
+				height: 267px;
+			}
+		}
+
+	}
+	.gallery-box2 {
+		margin-bottom: 50px;
+		&_img {
+			width: 572px;
+			height: 420px;
+		}
+	}
+	.gallery-img {
+		filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
+	}
+	.gallery-button {
+		&_btn {
+			background-color: #5685A3;
+		}	
+	}
+}
+
+/* subscribe to us */
+
+.subscribe-to-us {
+	min-height: 500px;
+	background: url('../img/bg_subscribe.png') center no-repeat;
+	.subscribe-box {
+		margin-bottom: 38px;
+		&_head {
+			font-size: 40px;
+			font-weight: 700;
+			margin: 0;
+			line-height: 48px; 
+		}
+		&_p {
+			width: 50%;
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+		&_form {
+			&-input {
+				width: 570px;
+				height: 55px;
+				padding: 15px;
+				border: 1px solid #000;
+				opacity: 0.7;
+				font-size: 15px;
+			}
+			&-btn {
+				width: 170px;
+				height: 55px;
+				margin-left: 25px;
+				background-color: #97BA2C;
+			}
+		}
+	}
+}
+
+
+
