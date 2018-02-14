@@ -25,13 +25,14 @@ body {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 300;
+	text-transform: uppercase;
 }
-h2 {
+.head2 {
 	font-size: 90px;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
-p {
+.paragraf {
 	line-height: 28px;
 	font-size: 17px;
 }
@@ -106,7 +107,6 @@ p {
 		&-text {
 			margin-left: 100px;
 			margin-bottom: 20px;
-			color: #fff;
 			&_head {
 				line-height: 75px;
 			}			
@@ -171,7 +171,6 @@ p {
 	min-height: 1535px;
 	.gallery-text {
 		padding-top: 90px;
-		text-align: center;
 		&_p {
 			padding: 0 300px 45px;
 			margin: 0;
@@ -243,6 +242,73 @@ p {
 				margin-left: 25px;
 				background-color: #97BA2C;
 			}
+		}
+	}
+}
+
+
+/* blog */
+.blog {
+	background-color: #B07CF8;
+	min-height: 865px;
+	.blog-text {
+		padding-top: 90px;
+		&_p {
+			padding: 0 300px 45px;
+			margin: 0;
+		}
+	}
+	.blog-box {
+		margin-bottom: 50px;
+		&_image {
+			position: relative;
+			&-img {
+				width: 370px;
+				height: 325px;
+				object-fit: cover;
+				filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
+			}
+			&-date {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 40px;
+				left: 30px;
+				background-color: rgba(0, 0, 0, 0.3);
+				border-radius: 5px;
+				text-align: center;				
+				padding: 5px;
+				&_nr {					
+					font-size: 30px;
+					line-height: 25px;
+					font-weight: 700;
+				}
+				&_month {					
+					line-height: 27px;
+					font-weight: 800;
+					font-size: 21px;
+				}
+			}
+			&-text {
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+				padding: 50px 20px 20px;
+				&_topic {
+					font-weight: 700;
+					font-size: 20px;
+				}
+				&_author {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.blog-button {
+		&_btn {
+			background-color: #F82B3C;
 		}
 	}
 }
