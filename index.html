@@ -122,7 +122,7 @@
 				<p class="subscribe-box_p">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>				
 				<form class="subscribe-box_form">
-					<input class="subscribe-box_form-input" type="email" name="email" placeholder="Your email adress..." required>
+					<input class="subscribe-box_form-input" type="email" name="email" placeholder="Your email adress..." autocomplete="off" required>
 					<button type="submit" class="btn subscribe-box_form-btn">subscribe</button>
 				</form>				
 			</div>
@@ -180,13 +180,39 @@
 	</section>
 
 <!-- Contact -->
-	<section id="contact">
-		<div class="container"></div>
+	<section id="contact" class="contact-to-us">
+		<div class="container">
+			<div class="text-center contact-text">
+				<h2 class="head2">Contact</h2>
+				<p class="paragraf contact-text_p">For new projects, ideas, business and anything you'd like discuss, contact with me!</p>
+			</div>
+			<div class="d-flex justify-content-between  contact-box">
+				<form class="d-flex flex-column justify-content-between contact-box_form">
+					<input class="contact-box_form-input" type="text" name="name" placeholder="Your name..." autocomplete="off" required>
+					<input class="contact-box_form-input" type="email" name="email" placeholder="Your email..." autocomplete="off" required>
+					<input class="contact-box_form-input" type="tel" name="phone" placeholder="Your phone number..." autocomplete="off" required>
+					<textarea class="contact-box_form-textarea" name="message" placeholder="Your message..." autocomplete="off" required></textarea>
+				</form>
+				<div class="contact-box_text">				
+					<h4 class="text-uppercase contact-box_text-head">address</h4>
+					<p class="contact-box_text-p">123 City name, Street, City, Country</p>	
+					<h4 class="text-uppercase contact-box_text-head">email</h4>
+					<p class="contact-box_text-p">cahee@domain.com</p>
+					<h4 class="text-uppercase contact-box_text-head">phone</h4>
+					<p class="contact-box_text-p">+012 345 6789</p>			
+				</div>
+			</div>
+			
+		</div>
 	</section>
 
 <!-- Footer -->
-	<footer>
-		<div class="container"></div>
+	<footer class="d-flex align-items-center footer">
+		<div class="container d-flex flex-row align-items-center justify-content-between">
+			<p class="m-0 footer-p_large">&copy 2015 Company. All rights reserved.</p>
+			<img src="img/logo_small.png" alt="logo">
+			<p class="m-0 footer-p_small">Made with <span class="footer-p_small_red">love</span> by Auskteez</p>
+		</div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
