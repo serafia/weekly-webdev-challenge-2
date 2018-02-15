@@ -37,6 +37,8 @@ body {
 	font-size: 17px;
 }
 
+
+/* header */
 .header {
 	height: 100vh;
 	background: #F9F8FB url('../img/bg_header.png');
@@ -89,6 +91,7 @@ body {
 		margin-bottom: 70px;
 	}
 }
+
 
 
 /* about us */
@@ -254,7 +257,7 @@ body {
 	.blog-text {
 		padding-top: 90px;
 		&_p {
-			padding: 0 300px 45px;
+			padding: 0 280px 45px;
 			margin: 0;
 		}
 	}
@@ -313,5 +316,93 @@ body {
 	}
 }
 
+/* contact to us */
 
+.contact-to-us {
+	background: url('../img/bg_contact.png') left/cover no-repeat;
+	min-height: 865px;
+	.contact-text {
+		padding-top: 90px;
+		&_p {
+			padding: 0 400px 30px;
+			margin: 0;
+		}
+	}
+	.contact-box {
+		&_form {
+		height: 445px;
+			font-size: 14px;
+			&-input {
+				width: 500px;
+				height: 50px;
+				padding: 5px 15px;
+				background-color: rgba(0, 196, 195, 0.5);
+				border: none;
+				color: #fff;
+				font-weight: 500;
+				&::placeholder {
+					color: #fff;
+					font-weight: 300;
+				}
+				&:focus {
+					background-color: rgb(0, 196, 195);
+					border-left: 5px solid #355B82;
+					outline: none;
+					padding-left: 10px;
+				}
+				
+			}
+			&-textarea {
+				width: 500px;
+				height: 250px;
+				padding: 15px 15px;
+				background-color: rgba(0, 196, 195, 0.5);
+				border: none;
+				color: #fff;
+				font-weight: 500;
+				&::placeholder {
+					color: #fff;
+					font-weight: 300;					
+				}
+				&:focus {
+					background-color: rgb(0, 196, 195);
+					border-left: 5px solid #355B82;
+					outline: none;
+					padding-left: 10px;
+				}
+			}
+		}
+		&_text {
+			padding-right: 170px;
+			&-head {
+				font-size: 17px;
+				font-weight: 700;
+				margin: 0;
+			}
+			&-p {
+				font-size: 21px;
+			}
+		}
+	}
+
+}
+
+/* footer */
+
+.footer {
+	background-color: #262626;
+	min-height: 100px;
+	color: #B9B9B9;
+	&-p_large {
+		
+
+	}
+	&-p_small {
+		font-size: 15px;
+		&_red {
+			color: #FD2B58;
+			font-weight: 600;
+		}
+	}
+}
 
