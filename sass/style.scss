@@ -12,6 +12,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	overflow-x: hidden;
+	position: relative;
 }
 .container {
 	max-width: 1200px;
@@ -39,6 +40,11 @@ body {
 }
 
 
+	
+.fixed-nav {
+	
+	background-color: #F9F9FB;
+}
 
 
 /* header */
@@ -51,11 +57,15 @@ body {
 /* navigation */
 	.navbar {
 		min-height: 145px;
+		z-index: 99;
+		transition: 0.3s;
+		position: fixed;
 		.nav-link {
 			font-weight: 700;
 			letter-spacing: -0.4px;
 			color: #000;
 			position: relative;
+			text-align: center;
 			&_line{
 				position: absolute;
 				width: 100%;
@@ -63,19 +73,26 @@ body {
 				top: 0;
 				left: 0;
 				background-color: red;
-				display: none;
+				visibility: hidden;
 			} 
 			&:hover .nav-link_line {
-			display: block;
-			animation: navLink 0.5s 1;
+				visibility: visible;
+				animation: navLink 0.5s 1;
+			}
+			
+		}
+		.active {
+			.nav-link_line {
+				visibility: visible;
+				animation: navLink 0.5s 1;
 			}
 		}
 	}
 /* jumbotron */
 	.jumbotron-fluid {
-		height: 70%;
 		.jumbotron-text {
 			width: 31.75%;
+			padding-top: 350px;
 			&_head {
 				font-size: 58px;
 				font-weight: 900;
@@ -89,10 +106,12 @@ body {
 				background-color: #FE6033;				
 			}
 		}
+		.scroll {
+			padding-top: 20%;
+			margin-bottom: 0;
+		}
 	}
-	.scroll {
-		margin-bottom: 70px;
-	}
+	
 }
 
 
@@ -339,18 +358,9 @@ body {
 				border: none;
 				color: #fff;
 				font-weight: 500;
-				&::placeholder {
-					color: #fff;
-					font-weight: 300;
-				}
-				&:focus {
-					background-color: rgb(0, 196, 195);
-					border-left: 5px solid #355B82;
-					outline: none;
-					padding-left: 10px;
-				}
-				
 			}
+						
+			
 			&-textarea {
 				width: 500px;
 				height: 250px;
@@ -359,16 +369,46 @@ body {
 				border: none;
 				color: #fff;
 				font-weight: 500;
+			}
+			.contact-input {
 				&::placeholder {
 					color: #fff;
-					font-weight: 300;					
+					font-weight: 300;
 				}
-				&:focus {
-					background-color: rgb(0, 196, 195);
+				&:focus {										
 					border-left: 5px solid #355B82;
 					outline: none;
 					padding-left: 10px;
 				}
+				&:hover {
+					border-left: 5px solid #355B82;
+					outline: none;
+					padding-left: 10px;
+				}
+				&:valid {
+					background-color: rgb(0, 196, 195);
+					outline: none;					
+				}
+			}
+			.phone-input {
+				&::placeholder {
+					color: #fff;
+					font-weight: 300;
+				}
+				&:focus {					
+					border-left: 5px solid #355B82;
+					outline: none;
+					padding-left: 10px;
+				}
+				&:hover {
+					border-left: 5px solid #355B82;
+					outline: none;
+					padding-left: 10px;
+				}
+			}
+			.fulfill {
+				background-color: rgb(0, 196, 195);
+				outline: none;
 			}
 		}
 		&_text {
@@ -383,12 +423,7 @@ body {
 			}
 		}
 	}
-	.fulfill {
-		background-color: rgb(0, 196, 195);
-		border-left: 5px solid #355B82;
-		outline: none;
-		padding-left: 10px;
-	}
+	
 
 }
 
@@ -411,19 +446,35 @@ body {
 
 /*media query */
 
-@media (max-width: 767px) {
+@media (max-width: 1170px) {
 	.d-flex {
 		flex-wrap: wrap;
 	}
+}
+
+@media (max-width: 767px) {
+	
 	.head2 {
 		font-size: 300%;
 	}
 
 	.header {
+		.navbar {
+			background-color: #F9F9FB;
+			.navbar-collapse {
+				padding-top: 20px;
+				.nav-link {
+					margin: 0 auto;
+					width: 25%;
+				}
+			}
+			
+		}
 		/* jumbotron */
 		.jumbotron-fluid {
 			.jumbotron-text {
 				width: 90%;
+				padding-top: 190px;
 				
 			}
 		}
@@ -529,5 +580,45 @@ body {
 			}
 		}
 	}
+/* contact to us */
 
+	.contact-to-us {
+		padding: 100px 0;
+		.contact-text {
+			&_p {
+				padding: 0 10px 30px;
+				margin: 0;
+			}
+		}
+		.contact-box {
+			&_form {
+				width: 100%;
+				&-input {
+					width: 100%;					
+					
+				}
+				&-textarea {
+					width: 100%;					
+				}
+			}
+			&_text {
+				padding-right: 0;
+				color: #fff;
+				padding-top: 50px;
+				text-align: center;
+			}
+		}
+	}
+/* footer */
+
+	.footer {
+		padding: 50px 0;
+		&-p_large {
+			width: 100%;
+			text-align: center;
+		}
+		&-p_small {
+			
+		}
+	}
 }
