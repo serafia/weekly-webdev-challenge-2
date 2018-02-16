@@ -8,29 +8,29 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<header class="d-flex  flex-column justify-content-between header">
+<body id="home" data-spy="scroll" data-target="#navbar">
+	<header class="header">
 		
 <!-- Navigation -->
-		<nav class="navbar navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-lg">
+			<div class="container w-100 d-flex justify-content-between">
+				<a class="navbar-brand" href="#home"><img src="img/logo.png" alt="logo"></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
   				<div class="collapse navbar-collapse justify-content-end" id="myNavigation">
-  					<a href="#home" class="mx-3 px-0 text-uppercase nav-link">home<span class="nav-link_line"></span></a>
-  					<a href="#about" class="mx-3 px-0 text-uppercase nav-link">about<span class="nav-link_line"></span></a>
-  					<a href="#services" class="mx-3 px-0 text-uppercase nav-link">services<span class="nav-link_line"></span></a>
-  					<a href="#gallery" class="mx-3 px-0 text-uppercase nav-link">gallery<span class="nav-link_line"></span></a>
-  					<a href="#blog" class="mx-3 px-0 text-uppercase nav-link">blog<span class="nav-link_line"></span></a>
-  					<a href="#contact" class="ml-3 px-0 text-uppercase nav-link">contact<span class="nav-link_line"></span></a>
+  					<a href="#home" class="mx-md-3 px-0 text-uppercase nav-link">home<span class="nav-link_line"></span></a>
+  					<a href="#about" class="mx-md-3 px-0 text-uppercase nav-link">about<span class="nav-link_line"></span></a>
+  					<a href="#services" class="mx-md-3 px-0 text-uppercase nav-link">services<span class="nav-link_line"></span></a>
+  					<a href="#gallery" class="mx-md-3 px-0 text-uppercase nav-link">gallery<span class="nav-link_line"></span></a>
+  					<a href="#blog" class="mx-md-3 px-0 text-uppercase nav-link">blog<span class="nav-link_line"></span></a>
+  					<a href="#contact" class="ml-md-3 mr-md-0 px-0 text-uppercase nav-link">contact<span class="nav-link_line"></span></a>
   				</div>
 			</div>
 		</nav>
 
 <!-- Jumbotron -->
-		<div class="jumbotron-fluid d-flex flex-column justify-content-center">
+		<div id="jumbotron" class="jumbotron-fluid d-flex flex-column justify-content-center">
 			<div class="container">
 				<div class="jumbotron-text">
 					<h1 class="jumbotron-text_head">Fresh Life</h1>
@@ -38,13 +38,14 @@
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 					<button class="btn jumbotron-text_btn">get free now</button>
 				</div>
+			</div>
+			<div class="container">
+				<div class="justify-content-center d-flex align-items-end justify-content-center scroll">
+					<img src="img/scroll.png" class="scroll_img" alt="scroll icon">
+				</div>
 			</div>			
 		</div>
-		<div class="container">
-			<div class="justify-content-center d-flex align-items-end justify-content-center scroll">
-				<img src="img/scroll.png" class="scroll_img" alt="scroll icon">
-			</div>
-		</div>		
+				
 	</header>
 
 <!-- About Us -->
@@ -116,16 +117,16 @@
 			</div>
 			<div class="d-flex justify-content-between gallery-box1">
 				<div class="gallery-box1_image1">
-					<img src="img/gallery1.png" class="img-fluid gallery-img gallery-box1_image1-img" alt="peach">
+					<img src="img/gallery1.png" class="img img-fluid gallery-img gallery-box1_image1-img" alt="peach">
 				</div>
 				<div class="d-flex flex-column  justify-content-between gallery-box1_image2">
-					<img src="img/gallery2.png" class="img-fluid gallery-img gallery-box1_image2-img" alt="blueberries">
-					<img src="img/gallery3.png" class="img-fluid gallery-img gallery-box1_image2-img" alt="blackberries">
+					<img src="img/gallery2.png" class="img img-fluid gallery-img gallery-box1_image2-img" alt="blueberries">
+					<img src="img/gallery3.png" class="img img-fluid gallery-img gallery-box1_image2-img" alt="blackberries">
 				</div>
 			</div>
 			<div class="d-flex justify-content-between gallery-box2">
-				<img src="img/gallery4.png" class="img-fluid gallery-img gallery-box2_img" alt="milkshake">
-				<img src="img/gallery5.png" class="img-fluid gallery-img gallery-box2_img" alt="pomegranate">				
+				<img src="img/gallery4.png" class="img img-fluid gallery-img gallery-box2_img" alt="milkshake">
+				<img src="img/gallery5.png" class="img img-fluid gallery-img gallery-box2_img" alt="pomegranate">				
 			</div>
 			<div class="d-flex justify-content-center gallery-button">
 				<button class="btn gallery-button_btn">view more</button>
@@ -208,10 +209,10 @@
 			</div>
 			<div class="d-flex justify-content-between  contact-box">
 				<form class="d-flex flex-column justify-content-between contact-box_form">
-					<input class="contact-box_form-input" type="text" name="name" placeholder="Your name..." autocomplete="off" required>
-					<input class="contact-box_form-input" type="email" name="email" placeholder="Your email..." autocomplete="off" required>
-					<input class="contact-box_form-input" type="tel" name="phone" placeholder="Your phone number..." autocomplete="off" required>
-					<textarea class="contact-box_form-textarea" name="message" placeholder="Your message..." autocomplete="off" required></textarea>
+					<input class="contact-input contact-box_form-input" type="text" name="name" placeholder="Your name..." autocomplete="off" required>
+					<input class="contact-input contact-box_form-input" type="email" name="email" placeholder="Your email..." autocomplete="off" required>
+					<input id="phone" class="phone-input contact-box_form-input" type="tel" name="phone" placeholder="Your phone number..." autocomplete="off" oninput="phonenumber()" required>
+					<textarea class="contact-input contact-box_form-textarea" name="message" placeholder="Your message..." autocomplete="off" required></textarea>
 				</form>
 				<div class="contact-box_text">				
 					<h4 class="text-uppercase contact-box_text-head">address</h4>
@@ -228,14 +229,15 @@
 
 <!-- Footer -->
 	<footer class="d-flex align-items-center footer">
-		<div class="container d-flex flex-row align-items-center justify-content-between">
-			<p class="m-0 footer-p_large">&copy 2015 Company. All rights reserved.</p>
-			<img src="img/logo_small.png" alt="logo">
+		<div class="container d-flex flex-row align-items-center justify-content-around justify-content-md-between">
+			<p class="m-md-0 footer-p_large">&copy 2015 Company. All rights reserved.</p>
+			<img class="pb-2 pb-md-0" src="img/logo_small.png" alt="logo">
 			<p class="m-0 footer-p_small">Made with <span class="footer-p_small_red">love</span> by Auskteez</p>
 		</div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
