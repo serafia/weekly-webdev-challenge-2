@@ -11,6 +11,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
 }
 .container {
 	max-width: 1200px;
@@ -38,9 +39,11 @@ body {
 }
 
 
+
+
 /* header */
 .header {
-	height: 100vh;
+	min-height: 100vh;
 	background: #F9F8FB url('../img/bg_header.png');
 	background-position: top;
 	background-repeat: no-repeat;
@@ -100,16 +103,18 @@ body {
 	background-color: #01BFBF;
 	min-height: 700px;
 	.about {
-		padding-top: 71px;
 		&-image {	
 
 			&_img {
 				filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
+				width: 567px;
+				height: 558px;
 			}
 		}
 		&-text {
-			margin-left: 100px;
-			margin-bottom: 20px;
+			padding-left: 8.55%;
+			padding-bottom: 20px;
+			max-width: 603px;
 			&_head {
 				line-height: 75px;
 			}			
@@ -126,10 +131,9 @@ body {
 	min-height: 790px;
 	background-color: #70C0FF;
 	.services {
-		padding-top: 100px;
 		&-buttons {
-				padding-top: 100px;
-				padding-left: 85px;
+				padding-top: 8.55%;
+				padding-left: 7.27%;
 			&-box {
 				width: 400px;
 				height: 100px;
@@ -142,16 +146,14 @@ body {
 					background-color: #fff;
 				}
 				&_btn-text{
-					width: 300px;
-					height: 100px;
+					width: 75%;					
 					font-weight: 700;
 					padding-left: 15px;
 					padding-right: 15px;
 					font-size: 18px;
 				}
 				&_btn-icon {
-					width: 100px;
-					height: 100px;	
+					width: 25%;						
 					border-left: 1px solid #000;
 				}
 			}
@@ -173,9 +175,8 @@ body {
 	background-color: #FEE92E;
 	min-height: 1535px;
 	.gallery-text {
-		padding-top: 90px;
 		&_p {
-			padding: 0 300px 45px;
+			padding: 0 25.6% 45px;
 			margin: 0;
 		}
 	}
@@ -255,9 +256,8 @@ body {
 	background-color: #B07CF8;
 	min-height: 865px;
 	.blog-text {
-		padding-top: 90px;
 		&_p {
-			padding: 0 280px 45px;
+			padding: 0 24% 45px;
 			margin: 0;
 		}
 	}
@@ -322,9 +322,8 @@ body {
 	background: url('../img/bg_contact.png') left/cover no-repeat;
 	min-height: 865px;
 	.contact-text {
-		padding-top: 90px;
 		&_p {
-			padding: 0 400px 30px;
+			padding: 0 34% 30px;
 			margin: 0;
 		}
 	}
@@ -384,6 +383,12 @@ body {
 			}
 		}
 	}
+	.fulfill {
+		background-color: rgb(0, 196, 195);
+		border-left: 5px solid #355B82;
+		outline: none;
+		padding-left: 10px;
+	}
 
 }
 
@@ -393,10 +398,6 @@ body {
 	background-color: #262626;
 	min-height: 100px;
 	color: #B9B9B9;
-	&-p_large {
-		
-
-	}
 	&-p_small {
 		font-size: 15px;
 		&_red {
@@ -406,3 +407,127 @@ body {
 	}
 }
 
+
+
+/*media query */
+
+@media (max-width: 767px) {
+	.d-flex {
+		flex-wrap: wrap;
+	}
+	.head2 {
+		font-size: 300%;
+	}
+
+	.header {
+		/* jumbotron */
+		.jumbotron-fluid {
+			.jumbotron-text {
+				width: 90%;
+				
+			}
+		}
+		.scroll {
+			margin-bottom: 70px;
+		}
+	}
+	
+/* services */
+
+	.our-services {
+		.services {
+			flex-direction: column-reverse;
+			&-buttons {
+				padding-top: 0;
+				padding-left: 0;
+				&-box {
+					width: 100%;
+					height: 100px;
+				}
+			}
+			&-image {
+				width: 100%;
+				height: auto;
+				background: none;
+				text-align: center;
+				&_head {
+					
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}	
+
+/* gallery */
+
+	.gallery {
+		padding: 100px 0;
+		.gallery-text {
+			&_p {
+				padding: 0 0 45px;
+			}
+		}
+		.gallery-box1 {
+			margin-bottom: 0;
+			&_image1 {
+				&-img {				
+					height: 220px;
+				}
+			}
+			&_image2 {
+				&-img {				
+					height: 220px;
+				}
+			}
+
+		}
+		.gallery-box2 {
+			&_img {
+				
+				height: 220px;
+			}
+		}
+		.gallery-img {
+			margin: 10px 0;
+		}
+		
+	}
+
+
+/* subscribe to us */
+
+	.subscribe-to-us {
+		background-image: none;
+		background-color: #fff;
+		.subscribe-box {
+			&_p {
+				width: 100%;
+			}
+			&_form {
+				&-input {
+					width: 100%;
+				}
+				&-btn {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	
+/* blog */
+	.blog {
+		padding: 100px 0;
+		.blog-text {
+			&_p {
+				padding: 0 0 45px;
+			}
+		}
+		.blog-box {
+			&_image {
+				margin: 10px 0;				
+			}
+		}
+	}
+
+}

@@ -6,7 +6,8 @@
   to {
     width: 100%; } }
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; }
 
 .container {
   max-width: 1200px; }
@@ -34,7 +35,7 @@ body {
 
 /* header */
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background: #F9F8FB url("../img/bg_header.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -78,64 +79,59 @@ body {
 .about-us {
   background-color: #01BFBF;
   min-height: 700px; }
-  .about-us .about {
-    padding-top: 71px; }
-    .about-us .about-image_img {
-      filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4)); }
-    .about-us .about-text {
-      margin-left: 100px;
-      margin-bottom: 20px; }
-      .about-us .about-text_head {
-        line-height: 75px; }
-      .about-us .about-text_p {
-        margin-bottom: 12px; }
+  .about-us .about-image_img {
+    filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
+    width: 567px;
+    height: 558px; }
+  .about-us .about-text {
+    padding-left: 8.55%;
+    padding-bottom: 20px;
+    max-width: 603px; }
+    .about-us .about-text_head {
+      line-height: 75px; }
+    .about-us .about-text_p {
+      margin-bottom: 12px; }
 
 /* our services */
 .our-services {
   min-height: 790px;
   background-color: #70C0FF; }
-  .our-services .services {
-    padding-top: 100px; }
-    .our-services .services-buttons {
-      padding-top: 100px;
-      padding-left: 85px; }
-      .our-services .services-buttons-box {
-        width: 400px;
-        height: 100px;
-        display: flex;
-        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
-        margin-bottom: 20px; }
-        .our-services .services-buttons-box_btn {
-          cursor: pointer;
-          border: none;
-          background-color: #fff; }
-        .our-services .services-buttons-box_btn-text {
-          width: 300px;
-          height: 100px;
-          font-weight: 700;
-          padding-left: 15px;
-          padding-right: 15px;
-          font-size: 18px; }
-        .our-services .services-buttons-box_btn-icon {
-          width: 100px;
-          height: 100px;
-          border-left: 1px solid #000; }
-    .our-services .services-image {
-      width: 560px;
-      height: 530px;
-      background: url("../img/tomatoes.png") right no-repeat; }
-      .our-services .services-image_head {
-        color: #fff; }
+  .our-services .services-buttons {
+    padding-top: 8.55%;
+    padding-left: 7.27%; }
+    .our-services .services-buttons-box {
+      width: 400px;
+      height: 100px;
+      display: flex;
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px; }
+      .our-services .services-buttons-box_btn {
+        cursor: pointer;
+        border: none;
+        background-color: #fff; }
+      .our-services .services-buttons-box_btn-text {
+        width: 75%;
+        font-weight: 700;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px; }
+      .our-services .services-buttons-box_btn-icon {
+        width: 25%;
+        border-left: 1px solid #000; }
+  .our-services .services-image {
+    width: 560px;
+    height: 530px;
+    background: url("../img/tomatoes.png") right no-repeat; }
+    .our-services .services-image_head {
+      color: #fff; }
 
 /* gallery */
 .gallery {
   background-color: #FEE92E;
   min-height: 1535px; }
-  .gallery .gallery-text {
-    padding-top: 90px; }
-    .gallery .gallery-text_p {
-      padding: 0 300px 45px;
-      margin: 0; }
+  .gallery .gallery-text_p {
+    padding: 0 25.6% 45px;
+    margin: 0; }
   .gallery .gallery-box1 {
     margin-bottom: 25px; }
     .gallery .gallery-box1_image1-img {
@@ -186,11 +182,9 @@ body {
 .blog {
   background-color: #B07CF8;
   min-height: 865px; }
-  .blog .blog-text {
-    padding-top: 90px; }
-    .blog .blog-text_p {
-      padding: 0 280px 45px;
-      margin: 0; }
+  .blog .blog-text_p {
+    padding: 0 24% 45px;
+    margin: 0; }
   .blog .blog-box {
     margin-bottom: 50px; }
     .blog .blog-box_image {
@@ -237,11 +231,9 @@ body {
 .contact-to-us {
   background: url("../img/bg_contact.png") left/cover no-repeat;
   min-height: 865px; }
-  .contact-to-us .contact-text {
-    padding-top: 90px; }
-    .contact-to-us .contact-text_p {
-      padding: 0 400px 30px;
-      margin: 0; }
+  .contact-to-us .contact-text_p {
+    padding: 0 34% 30px;
+    margin: 0; }
   .contact-to-us .contact-box_form {
     height: 445px;
     font-size: 14px; }
@@ -285,6 +277,11 @@ body {
       margin: 0; }
     .contact-to-us .contact-box_text-p {
       font-size: 21px; }
+  .contact-to-us .fulfill {
+    background-color: #00c4c3;
+    border-left: 5px solid #355B82;
+    outline: none;
+    padding-left: 10px; }
 
 /* footer */
 .footer {
@@ -296,3 +293,71 @@ body {
     .footer-p_small_red {
       color: #FD2B58;
       font-weight: 600; }
+
+/*media query */
+@media (max-width: 767px) {
+  .d-flex {
+    flex-wrap: wrap; }
+
+  .head2 {
+    font-size: 300%; }
+
+  .header {
+    /* jumbotron */ }
+    .header .jumbotron-fluid .jumbotron-text {
+      width: 90%; }
+    .header .scroll {
+      margin-bottom: 70px; }
+
+  /* services */
+  .our-services .services {
+    flex-direction: column-reverse; }
+    .our-services .services-buttons {
+      padding-top: 0;
+      padding-left: 0; }
+      .our-services .services-buttons-box {
+        width: 100%;
+        height: 100px; }
+    .our-services .services-image {
+      width: 100%;
+      height: auto;
+      background: none;
+      text-align: center; }
+      .our-services .services-image_head {
+        margin-bottom: 50px; }
+
+  /* gallery */
+  .gallery {
+    padding: 100px 0; }
+    .gallery .gallery-text_p {
+      padding: 0 0 45px; }
+    .gallery .gallery-box1 {
+      margin-bottom: 0; }
+      .gallery .gallery-box1_image1-img {
+        height: 220px; }
+      .gallery .gallery-box1_image2-img {
+        height: 220px; }
+    .gallery .gallery-box2_img {
+      height: 220px; }
+    .gallery .gallery-img {
+      margin: 10px 0; }
+
+  /* subscribe to us */
+  .subscribe-to-us {
+    background-image: none;
+    background-color: #fff; }
+    .subscribe-to-us .subscribe-box_p {
+      width: 100%; }
+    .subscribe-to-us .subscribe-box_form-input {
+      width: 100%; }
+    .subscribe-to-us .subscribe-box_form-btn {
+      margin-top: 20px;
+      margin-left: 0; }
+
+  /* blog */
+  .blog {
+    padding: 100px 0; }
+    .blog .blog-text_p {
+      padding: 0 0 45px; }
+    .blog .blog-box_image {
+      margin: 10px 0; } }
