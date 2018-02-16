@@ -14,7 +14,7 @@
 <!-- Navigation -->
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
-				<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
@@ -34,7 +34,7 @@
 			<div class="container">
 				<div class="jumbotron-text">
 					<h1 class="jumbotron-text_head">Fresh Life</h1>
-					<p class="jumbotron-text_p">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+					<p class=" jumbotron-text_p">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 					<button class="btn jumbotron-text_btn">get free now</button>
 				</div>
@@ -48,11 +48,11 @@
 	</header>
 
 <!-- About Us -->
-	<section id="about" class="about-us">
-		<div class="container">
+	<section id="about" class="d-flex align-items-center about-us">
+		<div class="container ">
 			<div class="d-flex align-items-center about">
-				<div class="about-image">
-					<img src="img/cup.png" class="about-image_img" alt="cup with raspberries">
+				<div class="d-none d-md-block about-image">
+					<img src="img/cup.png" class="img-fluid about-image_img" alt="cup with raspberries">
 				</div>
 				<div class="text-white about-text">
 					<h2 class="head2 about-text_head">About Us</h2>
@@ -69,24 +69,44 @@
 	</section>
 
 <!-- Our Services -->
-	<section id="services" class="our-services">
+	<section id="services" class="d-flex align-items-center our-services">
 		<div class="container">
 			<div class="d-flex align-items-center justify-content-between services">
 				<div class="d-flex flex-column justify-content-center services-buttons">
-					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Online Shopping</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon1.png" alt="shopping icon"></button></div>
-					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Quality Product</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon2.png" alt="quality icon"></button></div>
-					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Domestic & International Delivery</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon3.png" alt="international icon"></button></div>
-					<div class="p-0 services-buttons-box"><button class="services-buttons-box_btn services-buttons-box_btn-text">Well Organized</button><button class="services-buttons-box_btn services-buttons-box_btn-icon"><img src="img/icon4.png" alt="carrot icon"></button></div>
+					<div class="p-0 services-buttons-box">
+						<button class="services-buttons-box_btn services-buttons-box_btn-text">Online Shopping</button>
+						<button class="services-buttons-box_btn services-buttons-box_btn-icon">
+							<img src="img/icon1.png" alt="shopping icon">
+						</button>
+					</div>
+					<div class="p-0 services-buttons-box">
+						<button class="services-buttons-box_btn services-buttons-box_btn-text">Quality Product</button>
+						<button class="services-buttons-box_btn services-buttons-box_btn-icon">
+							<img src="img/icon2.png" alt="quality icon">
+						</button>
+					</div>
+					<div class="p-0 services-buttons-box">
+						<button class="services-buttons-box_btn services-buttons-box_btn-text">Domestic & International Delivery</button>
+						<button class="services-buttons-box_btn services-buttons-box_btn-icon">
+							<img src="img/icon3.png" alt="international icon">
+						</button>
+					</div>
+					<div class="p-0 services-buttons-box">
+						<button class="services-buttons-box_btn services-buttons-box_btn-text">Well Organized</button>
+						<button class="services-buttons-box_btn services-buttons-box_btn-icon">
+							<img src="img/icon4.png" alt="carrot icon">
+						</button>
+					</div>
 				</div>
-				<div class=" d-flex align-items-center justify-content-end services-image">
-					<h2 class="mb-0 mt-1 head2 services-image_head">Our Services</h2>
+				<div class=" d-md-flex align-items-center justify-content-end services-image">
+					<h2 class="mb-md-0 mt-md-1 head2 services-image_head">Our Services</h2>
 				</div>
 			</div>
 		</div>
 	</section>
 
 <!-- Gallery -->
-	<section id="gallery" class="gallery">
+	<section id="gallery" class="d-flex align-items-center gallery">
 		<div class="container">
 			<div class="text-center gallery-text">
 				<h2 class="head2 gallery-text_head">Gallery</h2>
@@ -96,7 +116,7 @@
 			</div>
 			<div class="d-flex justify-content-between gallery-box1">
 				<div class="gallery-box1_image1">
-					<img src="img/gallery1.png" class="gallery-img gallery-box1_image1-img" alt="peach">
+					<img src="img/gallery1.png" class="img-fluid gallery-img gallery-box1_image1-img" alt="peach">
 				</div>
 				<div class="d-flex flex-column  justify-content-between gallery-box1_image2">
 					<img src="img/gallery2.png" class="img-fluid gallery-img gallery-box1_image2-img" alt="blueberries">
@@ -130,7 +150,7 @@
 	</section>
 
 <!-- Blog -->
-	<section id="blog" class="blog">
+	<section id="blog" class="d-flex align-items-center blog">
 		<div class="container">
 			<div class="text-white text-center blog-text">
 				<h2 class="head2">Blog</h2>
@@ -180,7 +200,7 @@
 	</section>
 
 <!-- Contact -->
-	<section id="contact" class="contact-to-us">
+	<section id="contact" class="d-flex align-items-center contact-to-us">
 		<div class="container">
 			<div class="text-center contact-text">
 				<h2 class="head2">Contact</h2>
