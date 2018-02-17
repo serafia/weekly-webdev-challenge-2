@@ -127,6 +127,7 @@ body {
 			&_img {
 				filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
 				width: 567px;
+				max-width: 567px;
 				height: 558px;
 			}
 		}
@@ -155,6 +156,7 @@ body {
 				padding-left: 7.27%;
 			&-box {
 				width: 400px;
+				max-width: 400px;
 				height: 100px;
 				display: flex;
 				box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
@@ -179,6 +181,7 @@ body {
 		}
 		&-image {
 			width: 560px;
+			max-width: 560px;
 			height: 530px;
 			background: url('../img/tomatoes.png') right no-repeat;
 			&_head {
@@ -224,6 +227,7 @@ body {
 	}
 	.gallery-img {
 		filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
+		object-fit: cover;
 	}
 	.gallery-button {
 		&_btn {
@@ -253,6 +257,7 @@ body {
 		&_form {
 			&-input {
 				width: 570px;
+				max-width: 570px;
 				height: 55px;
 				padding: 15px;
 				border: 1px solid #000;
@@ -291,8 +296,8 @@ body {
 				filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
 			}
 			&-date {
-				width: 60px;
-				height: 60px;
+				width: 16.2%;
+				height: 18.46%;
 				position: absolute;
 				top: 40px;
 				left: 30px;
@@ -352,6 +357,7 @@ body {
 			font-size: 14px;
 			&-input {
 				width: 500px;
+				max-width: 500px;
 				height: 50px;
 				padding: 5px 15px;
 				background-color: rgba(0, 196, 195, 0.5);
@@ -363,6 +369,7 @@ body {
 			
 			&-textarea {
 				width: 500px;
+				max-width: 500px;
 				height: 250px;
 				padding: 15px 15px;
 				background-color: rgba(0, 196, 195, 0.5);
@@ -447,8 +454,187 @@ body {
 /*media query */
 
 @media (max-width: 1170px) {
+	
+}
+
+@media (max-width: 992px) {
+	
 	.d-flex {
 		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	/* about us*/
+	.about-us {
+		.about {
+			&-text {
+				padding-left: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+
+/* services */
+
+	.our-services {
+		.services {
+			flex-direction: column-reverse;
+			&-buttons {
+				padding-top: 0;
+				padding-left: 0;
+				&-box {
+					width: 100%;
+					height: 100px;
+				}
+			}
+			&-image {
+				width: 100%;
+				height: auto;
+				background: none;
+				text-align: center;
+				&_head {					
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.header {
+		background: url(../img/bg_header.png) top/cover; 
+		/* jumbotron */
+		.jumbotron-fluid {
+			.jumbotron-text {
+				width: 50%;
+				margin-left: 20px;				
+			}
+			.scroll {
+				padding-top: 30%;
+				margin-bottom: 70px;
+			}
+		}
+	}
+
+
+/* gallery */
+
+	.gallery {
+		padding: 100px 0;
+		.gallery-box1 {
+			margin-bottom: 0;
+			&_image1 {
+				&-img {				
+					width: 650px;
+					height: 450px;
+				}
+			}
+			&_image2 {
+				&-img {		
+					width: 650px;		
+					height: 450px;
+				}
+			}
+
+		}
+		.gallery-box2 {
+			&_img {
+				width: 650px;		
+				height: 450px;
+			}
+		}
+		.gallery-img {
+			margin: 10px 0;
+		}
+		
+	}
+/* subscribe to us */
+
+	.subscribe-to-us {
+		.subscribe-box {
+			margin-left: 40px;
+			&_form {
+				&-btn {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+/* blog */
+	.blog {
+		padding: 100px 0;
+		.blog-text {
+			&_p {
+				
+			}
+		}
+		.blog-box {
+			&_image {
+				margin: 10px 0;	
+				&-img {
+					width: 650px;
+					height: 605px;
+				}
+				&-date {
+					top: 60px;
+					left: 50px;
+					&_nr {					
+						font-size: 50px;
+						line-height: 50px;
+						font-weight: 700;
+					}
+					&_month {					
+						line-height: 30px;
+						font-weight: 800;
+						font-size: 41px;
+					}
+				}
+				&-text {					
+					padding: 50px 30px 30px;
+					&_topic {
+						font-weight: 700;
+						font-size: 35px;
+					}
+					&_author {
+						font-size: 16px;
+					}
+				}							
+			}
+		}
+	}
+	/* contact to us */
+
+	.contact-to-us {
+		padding: 100px 0;
+		.contact-text {
+			&_p {
+				margin: 0;
+			}
+		}
+		.contact-box {
+			&_form {
+				width: 100%;
+				&-input {
+					width: 100%;					
+					
+				}
+				&-textarea {
+					width: 100%;					
+				}
+			}
+			&_text {
+				padding-right: 0;
+				color: #fff;
+				padding-top: 50px;
+				text-align: center;
+			}
+		}
 	}
 }
 
@@ -482,32 +668,11 @@ body {
 			margin-bottom: 70px;
 		}
 	}
-	
-/* services */
 
-	.our-services {
-		.services {
-			flex-direction: column-reverse;
-			&-buttons {
-				padding-top: 0;
-				padding-left: 0;
-				&-box {
-					width: 100%;
-					height: 100px;
-				}
-			}
-			&-image {
-				width: 100%;
-				height: auto;
-				background: none;
-				text-align: center;
-				&_head {
-					
-					margin-bottom: 50px;
-				}
-			}
-		}
-	}	
+
+
+	
+
 
 /* gallery */
 
