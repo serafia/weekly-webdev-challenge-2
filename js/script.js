@@ -4,6 +4,7 @@ function changeNavbar() {
 	if(scrollPosition > 0) {
 		$('#navbar').addClass('fixed-nav');
 		$('#navbar').css('min-height', '90px');
+
 	} else {
 		$('#navbar').css('min-height', '145px');
 		$('#navbar').removeClass('fixed-nav');		
@@ -13,11 +14,13 @@ function changeNavbar() {
 changeNavbar();
 $(window).scroll(function() {
 	changeNavbar();
+	$('.nav-link').not('.active').blur();
 });
 
 //scrollspy
 
 $('body').scrollspy({ target: '#navbar' });
+
 
 //smothscroll
 
@@ -53,3 +56,7 @@ function phonenumber() {
 	    }
 	}
 }
+
+$('.collapse .nav-link').click(function() {
+	$('#myNavigation').removeClass('show');
+});
