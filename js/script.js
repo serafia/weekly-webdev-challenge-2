@@ -3,10 +3,10 @@ function changeNavbar() {
 	//console.log(scrollPosition);
 	if(scrollPosition > 0) {
 		$('#navbar').addClass('fixed-nav');
-		$('#navbar').css('min-height', '90px');
+		$('#navbar').css('padding', '3% 15px');
 
 	} else {
-		$('#navbar').css('min-height', '145px');
+		$('#navbar').css('padding', '4.3% 15px');
 		$('#navbar').removeClass('fixed-nav');		
 		
 	}
