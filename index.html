@@ -9,10 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
-	<header id="home" class="header">
 		
 <!-- Navigation -->
-		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-md">
+		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-md position-fixed fixed-top">
 			<div class="container w-100 d-flex justify-content-between">
 				<a class="navbar-brand" href="#home"><img src="img/logo.png" alt="logo"></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,23 +29,21 @@
 		</nav>
 
 <!-- Jumbotron -->
-		<div id="jumbotron" class="jumbotron-fluid d-flex flex-column justify-content-center">
+		<section id="home" class="jumbotron-fluid">
 			<div class="container">
 				<div class="jumbotron-text">
 					<h1 class="jumbotron-text_head">Fresh Life</h1>
 					<p class=" jumbotron-text_p">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 					<button class="btn jumbotron-text_btn">get free now</button>
-				</div>
-			</div>
-			<div class="container">
-				<div class="justify-content-center d-flex align-items-end justify-content-center scroll">
-					<img src="img/scroll.png" class="scroll_img" alt="scroll icon">
+				</div>			
+				<div class="scroll">
+					<div class="scroll-anim"><img src="img/scroll1.png" class="mouse"><img src="img/scroll2.png" class="mouse-line"></div>
 				</div>
 			</div>			
-		</div>
+		</section>
 				
-	</header>
+	
 
 <!-- About Us -->
 	<section id="about" class="d-flex align-items-center about-us">
@@ -218,8 +215,8 @@
 					<h4 class="text-uppercase contact-box_text-head">address</h4>
 					<p class="contact-box_text-p">123 City name, Street, City, Country</p>	
 					<h4 class="text-uppercase contact-box_text-head">email</h4>
-					<p class="contact-box_text-p">cahee@domain.com</p>
-					<h4 class="text-uppercase contact-box_text-head">phone</h4>
+					<a href="mailto:cahee@domain.com" class="contact-box_text-p">cahee@domain.com</a>
+					<h4 class="mt-3 text-uppercase contact-box_text-head">phone</h4>
 					<p class="contact-box_text-p">+012 345 6789</p>			
 				</div>
 			</div>
