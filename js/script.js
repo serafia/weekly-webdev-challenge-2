@@ -1,7 +1,7 @@
 function changeNavbar() {
 	var scrollPosition = $(document).scrollTop();
 	//console.log(scrollPosition);
-	if(scrollPosition > 0) {
+	if(scrollPosition > 20) {
 		$('#navbar').addClass('fixed-nav');
 		$('#navbar').css('padding', '3% 15px');
 
@@ -58,5 +58,9 @@ function phonenumber() {
 }
 
 $('.collapse .nav-link').click(function() {
-	$('#myNavigation').removeClass('show');
+	$('#myNavigation').animate({height: '20px'}, 300, removeClassShow);
 });
+
+function removeClassShow() {
+	$(this).removeClass('show');
+}
