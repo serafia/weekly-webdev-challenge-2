@@ -8,8 +8,8 @@
 }
 
 @keyframes scroll {
-	from  {top: 5px;}
-	to {top: 20px;}
+	from {top: 5px;}
+	to {top: 12px;}
 }
 
 
@@ -61,7 +61,7 @@ body {
 
 .navbar {
 	max-height: 62px;
-	padding: 4.3% 15px;
+	padding: 5% 15px;
 	transition: 0.3s;
 	&-collapse {
 		.nav-link {
@@ -80,13 +80,19 @@ body {
 				visibility: hidden;
 			} 
 			&:hover .nav-link__line {
-				visibility: visible;
+				visibility: visible;				
 				animation: navLink 0.5s 1;
 			}			
 		}
 		.active {
 			.nav-link__line {
 				visibility: visible;
+				animation: navLink 0.5s 1;
+			}
+		}
+		.nav-link:not(.active) {
+			.nav-link__line {
+				visibility: hidden;
 				animation: navLink 0.5s 1;
 			}
 		}
@@ -125,7 +131,7 @@ body {
 		}
 		.scroll {
 			position: absolute;
-			bottom: 70px;
+			bottom: 7%;
 			left: 50%;
 			&__anim {
 				position: relative;
@@ -135,6 +141,13 @@ body {
 					left: 10px;
 					animation: scroll 1.2s infinite;
 				}
+			}
+			&__arrow {
+				.fa-angle-down {
+					position: relative;
+					font-size: 40px;
+					animation: scroll 1.2s infinite;
+				}				
 			}
 		}
 	}	
@@ -334,8 +347,8 @@ body {
 				filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
 			}
 			&__date {
-				width: 16.2%;
-				height: 18.46%;
+				width: 16.3%;
+				height: 18.7%;
 				position: absolute;
 				top: 12.5%;
 				left: 8.1%;
@@ -650,6 +663,21 @@ body {
 
 
 
+/* navigation 
+
+	.navbar {
+		.navbar-collapse {
+			.nav-link {
+				&:hover .nav-link__line {
+					background-color: transparent;
+				}
+			}
+		}		
+	}
+*/
+
+
+	
 /* about us*/
 
 	.about-us {
@@ -727,9 +755,9 @@ body {
 
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
 
-		 
+
 /* jumbotron */
 
 	.jumbotron-fluid {
@@ -821,7 +849,7 @@ body {
 
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
 	
 
 /* general */
@@ -857,8 +885,8 @@ body {
 		.container {
 			.jumbotron-text {
 				width: 100%;
-				padding: 90px 15px 0;
-				top: 2%;
+				padding: 0 15px;
+				top: 20%;
 				left: 0;
 				text-align: center;				
 			}
@@ -929,7 +957,18 @@ body {
 			&__image {
 				margin: 10px 0;	
 				&__date {
-					padding: 4px;
+					padding: 0.7%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					&__nr {
+						font-size: 30px;
+						line-height: 25px;
+					}
+					&__month {
+						font-size: 21px;
+						line-height: 27px;
+					}
 				}			
 			}
 		}
@@ -962,4 +1001,39 @@ body {
 			}
 		}
 	}
+}
+
+@media (max-height: 550px) {
+
+/* jumbotron */
+
+	.jumbotron-fluid {
+		.container {
+			.jumbotron-text {
+				top: 5%;				
+			}
+		}		
+	}
+
+
+
+/* blog */
+
+	.blog {
+		&__box {
+			&__image {
+				&__date {
+					&__nr {
+						font-size: 24px;
+						line-height: 18.5px;
+					}
+					&__month {
+						font-size: 16px;
+						line-height: 23px;
+					}
+				}			
+			}
+		}
+	}
+
 }

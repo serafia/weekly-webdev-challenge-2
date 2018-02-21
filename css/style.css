@@ -14,12 +14,12 @@
   from {
     top: 5px; }
   to {
-    top: 20px; } }
+    top: 12px; } }
 @keyframes scroll {
   from {
     top: 5px; }
   to {
-    top: 20px; } }
+    top: 12px; } }
 /* general */
 body {
   font-family: 'Raleway', sans-serif;
@@ -61,7 +61,7 @@ body {
 /* navigation */
 .navbar {
   max-height: 62px;
-  padding: 4.3% 15px;
+  padding: 5% 15px;
   transition: 0.3s; }
   .navbar-collapse .nav-link {
     font-weight: 700;
@@ -83,6 +83,10 @@ body {
               animation: navLink 0.5s 1; }
   .navbar-collapse .active .nav-link__line {
     visibility: visible;
+    -webkit-animation: navLink 0.5s 1;
+            animation: navLink 0.5s 1; }
+  .navbar-collapse .nav-link:not(.active) .nav-link__line {
+    visibility: hidden;
     -webkit-animation: navLink 0.5s 1;
             animation: navLink 0.5s 1; }
 
@@ -110,7 +114,7 @@ body {
         background-color: #FE6033; }
     .jumbotron-fluid .container .scroll {
       position: absolute;
-      bottom: 70px;
+      bottom: 7%;
       left: 50%; }
       .jumbotron-fluid .container .scroll__anim {
         position: relative; }
@@ -120,6 +124,11 @@ body {
           left: 10px;
           -webkit-animation: scroll 1.2s infinite;
                   animation: scroll 1.2s infinite; }
+      .jumbotron-fluid .container .scroll__arrow .fa-angle-down {
+        position: relative;
+        font-size: 40px;
+        -webkit-animation: scroll 1.2s infinite;
+                animation: scroll 1.2s infinite; }
 
 /* about us */
 .about-us {
@@ -250,8 +259,8 @@ body {
         -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
                 filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6)); }
       .blog__box__image__date {
-        width: 16.2%;
-        height: 18.46%;
+        width: 16.3%;
+        height: 18.7%;
         position: absolute;
         top: 12.5%;
         left: 8.1%;
@@ -437,6 +446,18 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
 
+  /* navigation 
+  
+  	.navbar {
+  		.navbar-collapse {
+  			.nav-link {
+  				&:hover .nav-link__line {
+  					background-color: transparent;
+  				}
+  			}
+  		}		
+  	}
+  */
   /* about us*/
   .about-us .about__text {
     padding-left: 0;
@@ -480,7 +501,7 @@ body {
       text-align: center; }
       .contact-to-us .contact-box__text__p {
         color: #fff; } }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
   /* jumbotron */
   .jumbotron-fluid {
     background-size: cover; }
@@ -527,7 +548,7 @@ body {
           font-size: 35px; }
         .blog__box__image__text__author {
           font-size: 16px; } }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   /* general */
   .head2 {
     font-size: 300%; }
@@ -547,8 +568,8 @@ body {
     padding-top: 90px; }
     .jumbotron-fluid .container .jumbotron-text {
       width: 100%;
-      padding: 90px 15px 0;
-      top: 2%;
+      padding: 0 15px;
+      top: 20%;
       left: 0;
       text-align: center; }
     .jumbotron-fluid .container .scroll {
@@ -585,7 +606,23 @@ body {
     .blog__box__image {
       margin: 10px 0; }
       .blog__box__image__date {
-        padding: 4px; }
+        padding: 0.7%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .blog__box__image__date__nr {
+          font-size: 30px;
+          line-height: 25px; }
+        .blog__box__image__date__month {
+          font-size: 21px;
+          line-height: 27px; }
 
   /* contact to us */
   .contact-to-us .contact-text__p {
@@ -597,3 +634,15 @@ body {
     .footer__p--large {
       width: 100%;
       text-align: center; } }
+@media (max-height: 550px) {
+  /* jumbotron */
+  .jumbotron-fluid .container .jumbotron-text {
+    top: 5%; }
+
+  /* blog */
+  .blog__box__image__date__nr {
+    font-size: 24px;
+    line-height: 18.5px; }
+  .blog__box__image__date__month {
+    font-size: 16px;
+    line-height: 23px; } }
