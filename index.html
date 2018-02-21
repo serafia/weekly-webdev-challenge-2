@@ -6,24 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
 		
 <!-- Navigation -->
-		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-md position-fixed fixed-top">
+		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-sm position-fixed fixed-top">
 			<div class="container w-100 d-flex justify-content-between">
 				<a class="navbar-brand" href="#home"><img src="img/logo.png" alt="logo"></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
   				<div class="collapse navbar-collapse justify-content-end" id="myNavigation">
-  					<a href="#home" class="mx-md-3 px-0 text-uppercase nav-link">home<span class="nav-link__line"></span></a>
-  					<a href="#about" class="mx-md-3 px-0 text-uppercase nav-link">about<span class="nav-link__line"></span></a>
-  					<a href="#services" class="mx-md-3 px-0 text-uppercase nav-link">services<span class="nav-link__line"></span></a>
-  					<a href="#gallery" class="mx-md-3 px-0 text-uppercase nav-link">gallery<span class="nav-link__line"></span></a>
-  					<a href="#blog" class="mx-md-3 px-0 text-uppercase nav-link">blog<span class="nav-link__line"></span></a>
-  					<a href="#contact" class="ml-md-3 mr-md-0 px-0 text-uppercase nav-link">contact<span class="nav-link__line"></span></a>
+  					<a href="#home" class="mx-sm-2 mx-md-3 px-0 text-uppercase nav-link">home<span class="nav-link__line"></span></a>
+  					<a href="#about" class="mx-sm-2 mx-md-3 px-0 text-uppercase nav-link">about<span class="nav-link__line"></span></a>
+  					<a href="#services" class="mx-sm-2 mx-md-3 px-0 text-uppercase nav-link">services<span class="nav-link__line"></span></a>
+  					<a href="#gallery" class="mx-sm-2 mx-md-3 px-0 text-uppercase nav-link">gallery<span class="nav-link__line"></span></a>
+  					<a href="#blog" class="mx-sm-2 mx-md-3 px-0 text-uppercase nav-link">blog<span class="nav-link__line"></span></a>
+  					<a href="#contact" class="ml-sm-2 ml-md-3 mr-sm-0 px-0 text-uppercase nav-link">contact<span class="nav-link__line"></span></a>
   				</div>
 			</div>
 		</nav>
@@ -38,7 +39,8 @@
 					<button class="btn jumbotron-text__btn">get free now</button>
 				</div>			
 				<div class="scroll">
-					<div class="scroll__anim"><img src="img/scroll1.png" class="scroll__anim__mouse"><img src="img/scroll2.png" class="scroll__anim__mouse__line"></div>
+					<div class="d-none d-lg-block scroll__anim"><img src="img/scroll1.png" class="scroll__anim__mouse"><img src="img/scroll2.png" class="scroll__anim__mouse__line"></div>
+					<div class="d-lg-none scroll__arrow"><i class="fas fa-angle-down"></i></div>
 				</div>
 			</div>			
 		</section>
@@ -152,7 +154,7 @@
 		<div class="container">
 			<div class="text-white text-center blog__text">
 				<h2 class="head2">Blog</h2>
-				<p class="paragraf blog__text_p">Dolore magna aliqua. Ut enim ad minim veniam,
+				<p class="paragraf blog__text__p">Dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 			</div>
