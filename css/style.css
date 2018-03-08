@@ -1,20 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
 /* animations */
-@-webkit-keyframes navLink {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
 @keyframes navLink {
   from {
     width: 0; }
   to {
     width: 100%; } }
-@-webkit-keyframes scroll {
-  from {
-    top: 5px; }
-  to {
-    top: 12px; } }
 @keyframes scroll {
   from {
     top: 5px; }
@@ -43,8 +33,7 @@ body {
   transition: 0.3s; }
 
 .btn:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1); }
 
 .head2 {
   font-size: 90px;
@@ -79,16 +68,13 @@ body {
       visibility: hidden; }
     .navbar-collapse .nav-link:hover .nav-link__line {
       visibility: visible;
-      -webkit-animation: navLink 0.5s 1;
-              animation: navLink 0.5s 1; }
+      animation: navLink 0.5s 1; }
   .navbar-collapse .active .nav-link__line {
     visibility: visible;
-    -webkit-animation: navLink 0.5s 1;
-            animation: navLink 0.5s 1; }
+    animation: navLink 0.5s 1; }
   .navbar-collapse .nav-link:not(.active) .nav-link__line {
     visibility: hidden;
-    -webkit-animation: navLink 0.5s 1;
-            animation: navLink 0.5s 1; }
+    animation: navLink 0.5s 1; }
 
 /* jumbotron */
 .jumbotron-fluid {
@@ -118,33 +104,30 @@ body {
       left: 50%; }
       .jumbotron-fluid .container .scroll__anim {
         position: relative; }
-        .jumbotron-fluid .container .scroll__anim__mouse__line {
+        .jumbotron-fluid .container .scroll__anim--mouseline {
           position: absolute;
           top: 2px;
           left: 10px;
-          -webkit-animation: scroll 1.2s infinite;
-                  animation: scroll 1.2s infinite; }
+          animation: scroll 1.2s infinite; }
       .jumbotron-fluid .container .scroll__arrow .fa-angle-down {
         position: relative;
         font-size: 40px;
-        -webkit-animation: scroll 1.2s infinite;
-                animation: scroll 1.2s infinite; }
+        animation: scroll 1.2s infinite; }
 
 /* about us */
 .about-us {
   background-color: #01BFBF;
   min-height: 700px; }
-  .about-us .about__image__img {
-    -webkit-filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
-            filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
+  .about-us .about__image--img {
+    filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
     width: 567px; }
   .about-us .about__text {
     padding-left: 8.55%;
     padding-bottom: 20px;
     max-width: 603px; }
-    .about-us .about__text__head {
+    .about-us .about__text--head {
       line-height: 75px; }
-    .about-us .about__text__p {
+    .about-us .about__text--p {
       margin-bottom: 12px; }
 
 /* our services */
@@ -154,26 +137,24 @@ body {
   .our-services .services__buttons {
     padding-top: 8.55%;
     padding-left: 7.27%; }
-    .our-services .services__buttons__box {
+    .our-services .services__buttons--box {
       width: 400px;
       max-width: 400px;
       height: 100px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
       margin-bottom: 20px; }
-      .our-services .services__buttons__box__btn {
+      .our-services .services__buttons--box__btn {
         cursor: pointer;
         border: none;
         background-color: #fff; }
-      .our-services .services__buttons__box__btn__text {
+      .our-services .services__buttons--box__btn--text {
         width: 75%;
         font-weight: 700;
         padding-left: 15px;
         padding-right: 15px;
         font-size: 18px; }
-      .our-services .services__buttons__box__btn__icon {
+      .our-services .services__buttons--box__btn--icon {
         width: 25%;
         border-left: 1px solid #000; }
   .our-services .services__image {
@@ -181,53 +162,51 @@ body {
     max-width: 560px;
     height: 530px;
     background: url("../img/tomatoes.png") right no-repeat; }
-    .our-services .services__image__head {
+    .our-services .services__image--head {
       color: #fff; }
 
 /* gallery */
 .gallery {
   background-color: #FEE92E;
   min-height: 1535px; }
-  .gallery .gallery__text__p {
+  .gallery .gallery__text--p {
     padding: 0 25.6% 45px;
     margin: 0; }
   .gallery .gallery__box1 {
     margin-bottom: 25px; }
-    .gallery .gallery__box1__image1__img {
+    .gallery .gallery__box1__image1--img {
       width: 745px;
       height: 560px; }
-    .gallery .gallery__box1__image2__img {
+    .gallery .gallery__box1__image2--img {
       width: 400px;
       height: 267px; }
   .gallery .gallery__box2 {
     margin-bottom: 50px; }
-    .gallery .gallery__box2__img {
+    .gallery .gallery__box2--img {
       width: 572px;
       height: 420px; }
   .gallery .gallery__img {
-    -webkit-filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
-            filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .gallery .gallery__button__btn {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
+    object-fit: cover; }
+  .gallery .gallery__button--btn {
     background-color: #5685A3; }
 
 /* subscribe to us */
 .subscribe-to-us {
   min-height: 500px;
   background: url("../img/bg_subscribe.png") center no-repeat; }
-  .subscribe-to-us .subscribe__box {
+  .subscribe-to-us .subscribe {
     margin-bottom: 38px; }
-    .subscribe-to-us .subscribe__box__head {
+    .subscribe-to-us .subscribe--head {
       font-size: 40px;
       font-weight: 700;
       margin: 0;
       line-height: 48px; }
-    .subscribe-to-us .subscribe__box__p {
+    .subscribe-to-us .subscribe--p {
       width: 50%;
       margin-top: 25px;
       margin-bottom: 30px; }
-    .subscribe-to-us .subscribe__box__form__input {
+    .subscribe-to-us .subscribe__form--input {
       width: 570px;
       max-width: 570px;
       height: 55px;
@@ -235,7 +214,7 @@ body {
       border: 1px solid #000;
       opacity: 0.7;
       font-size: 15px; }
-    .subscribe-to-us .subscribe__box__form__btn {
+    .subscribe-to-us .subscribe__form--btn {
       width: 170px;
       height: 55px;
       margin-left: 25px;
@@ -245,20 +224,18 @@ body {
 .blog {
   background-color: #B07CF8;
   min-height: 865px; }
-  .blog__text__p {
+  .blog__text--p {
     padding: 0 24% 45px;
     margin: 0; }
   .blog__box {
     margin-bottom: 50px; }
-    .blog__box__image {
+    .blog__box .blog__image {
       position: relative; }
-      .blog__box__image__img {
+      .blog__box .blog__image--img {
         width: 370px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
-                filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6)); }
-      .blog__box__image__date {
+        object-fit: cover;
+        filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6)); }
+      .blog__box .blog__image--date {
         width: 16.3%;
         height: 18.7%;
         position: absolute;
@@ -268,40 +245,40 @@ body {
         border-radius: 5px;
         text-align: center;
         padding: 7px; }
-        .blog__box__image__date__nr {
+        .blog__box .blog__image--date--nr {
           font-size: 30px;
           line-height: 20px;
           font-weight: 700; }
-        .blog__box__image__date__month {
+        .blog__box .blog__image--date--month {
           line-height: 27px;
           font-weight: 800;
           font-size: 21px; }
-      .blog__box__image__text {
+      .blog__box .blog__image__text {
         width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
         padding: 50px 20px 20px; }
-        .blog__box__image__text__topic {
+        .blog__box .blog__image__text--topic {
           font-weight: 700;
           font-size: 20px; }
-        .blog__box__image__text__author {
+        .blog__box .blog__image__text--author {
           font-size: 13px; }
-  .blog__button__btn {
+  .blog__button--btn {
     background-color: #F82B3C; }
 
 /* contact to us */
 .contact-to-us {
   background: url("../img/bg_contact.png") left/cover no-repeat;
   min-height: 865px; }
-  .contact-to-us .contact-text__p {
+  .contact-to-us .contact__text--p {
     padding: 0 34% 30px;
     margin: 0; }
-  .contact-to-us .contact-box__form {
+  .contact-to-us .contact__form {
     height: 445px;
     font-size: 14px; }
-    .contact-to-us .contact-box__form__input {
+    .contact-to-us .contact__form--input {
       width: 500px;
       max-width: 500px;
       height: 50px;
@@ -310,7 +287,7 @@ body {
       border: none;
       color: #fff;
       font-weight: 500; }
-    .contact-to-us .contact-box__form__textarea {
+    .contact-to-us .contact__form--textarea {
       width: 500px;
       max-width: 500px;
       height: 250px;
@@ -320,53 +297,41 @@ body {
       color: #fff;
       font-weight: 500;
       resize: none; }
-    .contact-to-us .contact-box__form .contact-input::-webkit-input-placeholder {
+    .contact-to-us .contact__form .contact-input::placeholder {
       color: #fff;
       font-weight: 300; }
-    .contact-to-us .contact-box__form .contact-input:-ms-input-placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact-box__form .contact-input::placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact-box__form .contact-input:focus {
+    .contact-to-us .contact__form .contact-input:focus {
       border-left: 5px solid #355B82;
       outline: none;
       padding-left: 10px; }
-    .contact-to-us .contact-box__form .contact-input:hover {
+    .contact-to-us .contact__form .contact-input:hover {
       border-left: 5px solid #355B82;
       outline: none;
       padding-left: 10px; }
-    .contact-to-us .contact-box__form .contact-input:valid {
+    .contact-to-us .contact__form .contact-input:valid {
       background-color: #00c4c3;
       outline: none; }
-    .contact-to-us .contact-box__form .phone-input::-webkit-input-placeholder {
+    .contact-to-us .contact__form .phone-input::placeholder {
       color: #fff;
       font-weight: 300; }
-    .contact-to-us .contact-box__form .phone-input:-ms-input-placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact-box__form .phone-input::placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact-box__form .phone-input:focus {
+    .contact-to-us .contact__form .phone-input:focus {
       border-left: 5px solid #355B82;
       outline: none;
       padding-left: 10px; }
-    .contact-to-us .contact-box__form .phone-input:hover {
+    .contact-to-us .contact__form .phone-input:hover {
       border-left: 5px solid #355B82;
       outline: none;
       padding-left: 10px; }
-    .contact-to-us .contact-box__form .fulfill {
+    .contact-to-us .contact__form .fulfill {
       background-color: #00c4c3;
       outline: none; }
-  .contact-to-us .contact-box__text {
+  .contact-to-us .contact__address {
     padding-right: 170px; }
-    .contact-to-us .contact-box__text__head {
+    .contact-to-us .contact__address--head {
       font-size: 17px;
       font-weight: 700;
       margin: 0; }
-    .contact-to-us .contact-box__text__p {
+    .contact-to-us .contact__address--p {
       font-size: 21px;
       color: #000; }
 
@@ -394,57 +359,54 @@ body {
   .about-us .about__text {
     padding-left: 40px;
     padding-right: 12px; }
-  .about-us .about__image__img {
+  .about-us .about__image--img {
     width: 500px; }
 
   /* services */
-  .our-services .services__image__head {
+  .our-services .services__image--head {
     text-align: center; }
 
   /* gallery */
   .gallery {
     padding: 100px 0; }
-    .gallery .gallery__box1__image1__img {
+    .gallery .gallery__box1__image1--img {
       width: 570px; }
-    .gallery .gallery__box2__img {
+    .gallery .gallery__box2--img {
       width: 489px;
       height: 420px; }
 
   /* subscribe to us */
-  .subscribe-to-us .subscribe__box {
+  .subscribe-to-us .subscribe {
     margin-left: 20px; }
 
   /* blog */
-  .blog__box__image__img {
+  .blog__box .blog__image--img {
     width: 315px;
     height: auto; }
-  .blog__box__image__date {
+  .blog__box .blog__image--date {
     padding: 4px; }
-    .blog__box__image__date__nr {
+    .blog__box .blog__image--date--nr {
       font-size: 25px;
       line-height: 25px;
       font-weight: 700; }
-    .blog__box__image__date__month {
+    .blog__box .blog__image--date--month {
       line-height: 12px;
       font-weight: 800;
       font-size: 15px; }
-  .blog__box__image__text__topic {
+  .blog__box .blog__image__text--topic {
     font-weight: 700;
     font-size: 16px; }
-  .blog__box__image__text__author {
+  .blog__box .blog__image__text--author {
     font-size: 12px; }
 
   /* contact to us */
-  .contact-to-us .contact-box__text {
+  .contact-to-us .contact__address {
     padding-right: 70px; } }
 @media (max-width: 991.98px) {
   /* gederal */
   .d-flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-wrap: wrap;
+    justify-content: center; }
 
   /* navigation 
   
@@ -465,14 +427,11 @@ body {
 
   /* services */
   .our-services .services {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
+    flex-direction: column-reverse; }
     .our-services .services__buttons {
       padding-top: 0;
       padding-left: 0; }
-      .our-services .services__buttons__box {
+      .our-services .services__buttons--box {
         width: 100%;
         height: 100px; }
     .our-services .services__image {
@@ -480,26 +439,26 @@ body {
       height: auto;
       background: none;
       text-align: center; }
-      .our-services .services__image__head {
+      .our-services .services__image--head {
         margin-bottom: 50px; }
 
   /* contact to us */
   .contact-to-us {
     padding: 100px 0; }
-    .contact-to-us .contact-text__p {
+    .contact-to-us .contact__text--p {
       margin: 0; }
-    .contact-to-us .contact-box__form {
+    .contact-to-us .contact__form {
       width: 100%; }
-      .contact-to-us .contact-box__form__input {
+      .contact-to-us .contact__form--input {
         width: 100%; }
-      .contact-to-us .contact-box__form__textarea {
+      .contact-to-us .contact__form--textarea {
         width: 100%; }
-    .contact-to-us .contact-box__text {
+    .contact-to-us .contact__address {
       padding-right: 0;
       color: #fff;
       padding-top: 50px;
       text-align: center; }
-      .contact-to-us .contact-box__text__p {
+      .contact-to-us .contact__address--p {
         color: #fff; } }
 @media (min-width: 576px) and (max-width: 991.98px) {
   /* jumbotron */
@@ -520,33 +479,33 @@ body {
       height: 450px; }
 
   /* subscribe to us */
-  .subscribe-to-us .subscribe__box {
+  .subscribe-to-us .subscribe {
     margin-left: 40px; }
-    .subscribe-to-us .subscribe__box__form__btn {
+    .subscribe-to-us .subscribe__form--btn {
       margin-top: 20px;
       margin-left: 0; }
 
   /* blog */
   .blog {
     padding: 100px 0; }
-    .blog__box__image {
+    .blog__box .blog__image {
       margin: 10px 0; }
-      .blog__box__image__img {
+      .blog__box .blog__image--img {
         width: 600px; }
-      .blog__box__image__date__nr {
+      .blog__box .blog__image--date--nr {
         font-size: 44px;
         line-height: 45px;
         font-weight: 700; }
-      .blog__box__image__date__month {
+      .blog__box .blog__image--date--month {
         line-height: 30px;
         font-weight: 800;
         font-size: 35px; }
-      .blog__box__image__text {
+      .blog__box .blog__image__text {
         padding: 50px 30px 30px; }
-        .blog__box__image__text__topic {
+        .blog__box .blog__image__text--topic {
           font-weight: 700;
           font-size: 35px; }
-        .blog__box__image__text__author {
+        .blog__box .blog__image__text--author {
           font-size: 16px; } }
 @media (max-width: 575.98px) {
   /* general */
@@ -578,7 +537,7 @@ body {
   /* gallery */
   .gallery {
     padding: 100px 0; }
-    .gallery .gallery__text__p {
+    .gallery .gallery__text--p {
       padding: 0 0 45px; }
     .gallery .gallery__box1 {
       margin-bottom: 0; }
@@ -590,42 +549,35 @@ body {
   .subscribe-to-us {
     background-image: none;
     background-color: #fff; }
-    .subscribe-to-us .subscribe__box__p {
+    .subscribe-to-us .subscribe--p {
       width: 100%; }
-    .subscribe-to-us .subscribe__box__form__input {
+    .subscribe-to-us .subscribe__form--input {
       width: 100%; }
-    .subscribe-to-us .subscribe__box__form__btn {
+    .subscribe-to-us .subscribe__form--btn {
       margin-top: 20px;
       margin-left: 0; }
 
   /* blog */
   .blog {
     padding: 100px 0; }
-    .blog__text__p {
+    .blog__text--p {
       padding: 0 0 45px; }
-    .blog__box__image {
+    .blog__box .blog__image {
       margin: 10px 0; }
-      .blog__box__image__date {
+      .blog__box .blog__image--date {
         padding: 0.7%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .blog__box__image__date__nr {
+        flex-direction: column;
+        justify-content: center; }
+        .blog__box .blog__image--date--nr {
           font-size: 30px;
           line-height: 25px; }
-        .blog__box__image__date__month {
+        .blog__box .blog__image--date--month {
           font-size: 21px;
           line-height: 27px; }
 
   /* contact to us */
-  .contact-to-us .contact-text__p {
+  .contact-to-us .contact__text--p {
     padding: 0 10px 30px; }
 
   /* footer */
@@ -640,9 +592,9 @@ body {
     top: 5%; }
 
   /* blog */
-  .blog__box__image__date__nr {
+  .blog__box__image--date--nr {
     font-size: 24px;
     line-height: 18.5px; }
-  .blog__box__image__date__month {
+  .blog__box__image--date--month {
     font-size: 16px;
     line-height: 23px; } }

@@ -135,7 +135,7 @@ body {
 			left: 50%;
 			&__anim {
 				position: relative;
-				&__mouse__line {
+				&--mouseline {
 					position: absolute;
 					top: 2px;
 					left: 10px;
@@ -163,7 +163,7 @@ body {
 	min-height: 700px;
 	.about {
 		&__image {	
-			&__img {
+			&--img {
 				filter: drop-shadow(-15px 3px 23px rgba(0, 0, 0, 0.4));
 				width: 567px;				
 			}
@@ -172,10 +172,10 @@ body {
 			padding-left: 8.55%;
 			padding-bottom: 20px;
 			max-width: 603px;
-			&__head {
+			&--head {
 				line-height: 75px;
 			}			
-			&__p {				
+			&--p {				
 				margin-bottom: 12px;
 			}
 		}
@@ -194,7 +194,7 @@ body {
 		&__buttons {
 				padding-top: 8.55%;
 				padding-left: 7.27%;
-			&__box {
+			&--box {
 				width: 400px;
 				max-width: 400px;
 				height: 100px;
@@ -207,16 +207,14 @@ body {
 					background-color: #fff;
 				}
 				&__btn {
-					&__text {
+					&--text {
 						width: 75%;					
 						font-weight: 700;
 						padding-left: 15px;
 						padding-right: 15px;
 						font-size: 18px;
 					}
-				}
-				&__btn {
-					&__icon {
+					&--icon {
 						width: 25%;						
 						border-left: 1px solid #000;
 					}
@@ -228,7 +226,7 @@ body {
 			max-width: 560px;
 			height: 530px;
 			background: url('../img/tomatoes.png') right no-repeat;
-			&__head {
+			&--head {
 				color: #fff;
 			}
 		}
@@ -244,7 +242,7 @@ body {
 	background-color: #FEE92E;
 	min-height: 1535px;
 	.gallery__text {
-		&__p {
+		&--p {
 			padding: 0 25.6% 45px;
 			margin: 0;
 		}
@@ -252,13 +250,13 @@ body {
 	.gallery__box1 {
 		margin-bottom: 25px;
 		&__image1 {
-			&__img {
+			&--img {
 				width: 745px;
 				height: 560px;
 			}
 		}
 		&__image2 {
-			&__img {
+			&--img {
 				width: 400px;
 				height: 267px;
 			}
@@ -266,7 +264,7 @@ body {
 	}
 	.gallery__box2 {
 		margin-bottom: 50px;
-		&__img {
+		&--img {
 			width: 572px;
 			height: 420px;
 		}
@@ -276,7 +274,7 @@ body {
 		object-fit: cover;
 	}
 	.gallery__button {
-		&__btn {
+		&--btn {
 			background-color: #5685A3;
 		}	
 	}
@@ -290,21 +288,21 @@ body {
 .subscribe-to-us {
 	min-height: 500px;
 	background: url('../img/bg_subscribe.png') center no-repeat;
-	.subscribe__box {
+	.subscribe {
 		margin-bottom: 38px;
-		&__head {
+		&--head {
 			font-size: 40px;
 			font-weight: 700;
 			margin: 0;
 			line-height: 48px; 
 		}
-		&__p {
+		&--p {
 			width: 50%;
 			margin-top: 25px;
 			margin-bottom: 30px;
 		}
 		&__form {
-			&__input {
+			&--input {
 				width: 570px;
 				max-width: 570px;
 				height: 55px;
@@ -313,7 +311,7 @@ body {
 				opacity: 0.7;
 				font-size: 15px;
 			}
-			&__btn {
+			&--btn {
 				width: 170px;
 				height: 55px;
 				margin-left: 25px;
@@ -332,21 +330,21 @@ body {
 	background-color: #B07CF8;
 	min-height: 865px;
 	&__text {
-		&__p {
+		&--p {
 			padding: 0 24% 45px;
 			margin: 0;
 		}
 	}
 	&__box {
 		margin-bottom: 50px;
-		&__image {
+		.blog__image {
 			position: relative;
-			&__img {
+			&--img {
 				width: 370px;
 				object-fit: cover;
 				filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
 			}
-			&__date {
+			&--date {
 				width: 16.3%;
 				height: 18.7%;
 				position: absolute;
@@ -356,12 +354,12 @@ body {
 				border-radius: 5px;
 				text-align: center;				
 				padding: 7px;
-				&__nr {					
+				&--nr {					
 					font-size: 30px;
 					line-height: 20px;
 					font-weight: 700;
 				}
-				&__month {					
+				&--month {					
 					line-height: 27px;
 					font-weight: 800;
 					font-size: 21px;
@@ -374,18 +372,18 @@ body {
 				left: 0;
 				background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
 				padding: 50px 20px 20px;
-				&__topic {
+				&--topic {
 					font-weight: 700;
 					font-size: 20px;
 				}
-				&__author {
+				&--author {
 					font-size: 13px;
 				}
 			}
 		}
 	}
 	&__button {
-		&__btn {
+		&--btn {
 			background-color: #F82B3C;
 		}
 	}
@@ -397,91 +395,89 @@ body {
 /* contact to us */
 
 .contact-to-us {
-	background: url('../img/bg_contact.png') left/cover no-repeat;
-	min-height: 865px;
-	.contact-text {
-		&__p {
-			padding: 0 34% 30px;
-			margin: 0;
+background: url('../img/bg_contact.png') left/cover no-repeat;
+min-height: 865px;
+.contact__text {
+	&--p {
+		padding: 0 34% 30px;
+		margin: 0;
+	}
+}
+.contact__form {
+	height: 445px;
+		font-size: 14px;
+		&--input {
+			width: 500px;
+			max-width: 500px;
+			height: 50px;
+			padding: 5px 15px;
+			background-color: rgba(0, 196, 195, 0.5);
+			border: none;
+			color: #fff;
+			font-weight: 500;
+		}			
+		&--textarea {
+			width: 500px;
+			max-width: 500px;
+			height: 250px;
+			padding: 15px 15px;
+			background-color: rgba(0, 196, 195, 0.5);
+			border: none;
+			color: #fff;
+			font-weight: 500;
+			resize: none;
+		}
+		.contact-input {
+			&::placeholder {
+				color: #fff;
+				font-weight: 300;
+			}
+			&:focus {										
+				border-left: 5px solid #355B82;
+				outline: none;
+				padding-left: 10px;
+			}
+			&:hover {
+				border-left: 5px solid #355B82;
+				outline: none;
+				padding-left: 10px;
+			}
+			&:valid {
+				background-color: rgb(0, 196, 195);
+				outline: none;					
+			}
+		}
+		.phone-input {
+			&::placeholder {
+				color: #fff;
+				font-weight: 300;
+			}
+			&:focus {					
+				border-left: 5px solid #355B82;
+				outline: none;
+				padding-left: 10px;
+			}
+			&:hover {
+				border-left: 5px solid #355B82;
+				outline: none;
+				padding-left: 10px;
+			}
+		}
+		.fulfill {
+			background-color: rgb(0, 196, 195);
+			outline: none;
 		}
 	}
-	.contact-box {
-		&__form {
-		height: 445px;
-			font-size: 14px;
-			&__input {
-				width: 500px;
-				max-width: 500px;
-				height: 50px;
-				padding: 5px 15px;
-				background-color: rgba(0, 196, 195, 0.5);
-				border: none;
-				color: #fff;
-				font-weight: 500;
-			}			
-			&__textarea {
-				width: 500px;
-				max-width: 500px;
-				height: 250px;
-				padding: 15px 15px;
-				background-color: rgba(0, 196, 195, 0.5);
-				border: none;
-				color: #fff;
-				font-weight: 500;
-				resize: none;
-			}
-			.contact-input {
-				&::placeholder {
-					color: #fff;
-					font-weight: 300;
-				}
-				&:focus {										
-					border-left: 5px solid #355B82;
-					outline: none;
-					padding-left: 10px;
-				}
-				&:hover {
-					border-left: 5px solid #355B82;
-					outline: none;
-					padding-left: 10px;
-				}
-				&:valid {
-					background-color: rgb(0, 196, 195);
-					outline: none;					
-				}
-			}
-			.phone-input {
-				&::placeholder {
-					color: #fff;
-					font-weight: 300;
-				}
-				&:focus {					
-					border-left: 5px solid #355B82;
-					outline: none;
-					padding-left: 10px;
-				}
-				&:hover {
-					border-left: 5px solid #355B82;
-					outline: none;
-					padding-left: 10px;
-				}
-			}
-			.fulfill {
-				background-color: rgb(0, 196, 195);
-				outline: none;
-			}
+	.contact__address {
+		padding-right: 170px;
+		&--head {
+			font-size: 17px;
+			font-weight: 700;
+			margin: 0;
 		}
-		&__text {
-			padding-right: 170px;
-			&__head {
-				font-size: 17px;
-				font-weight: 700;
-				margin: 0;
-			}
-			&__p {
-				font-size: 21px;
-				color: #000;
-			}
+		&--p {
+			font-size: 21px;
+			color: #000;
 		}
 	}
 }
@@ -539,7 +535,7 @@ body {
 				padding-right: 12px;
 			}
 			&__image {
-				&__img {
+				&--img {
 					width: 500px;
 				}
 			}
@@ -554,7 +550,7 @@ body {
 	.our-services {
 		.services {
 			&__image {
-				&__head {					
+				&--head {					
 					text-align: center;
 				}
 			}
@@ -571,13 +567,13 @@ body {
 		padding: 100px 0;
 		.gallery__box1 {
 			&__image1 {
-				&__img {				
+				&--img {				
 					width: 570px;					
 				}
 			}
 		}
 		.gallery__box2 {
-			&__img {
+			&--img {
 				width: 489px;		
 				height: 420px;
 			}
@@ -591,7 +587,7 @@ body {
 /* subscribe to us */
 
 	.subscribe-to-us {
-		.subscribe__box {
+		.subscribe {
 			margin-left: 20px;
 		}
 	}
@@ -603,30 +599,30 @@ body {
 
 	.blog {
 		&__box {
-			&__image {
-				&__img {
+			.blog__image {
+				&--img {
 					width: 315px;
 					height: auto;
 				}
-				&__date {
+				&--date {
 					padding: 4px;
-					&__nr {					
+					&--nr {					
 						font-size: 25px;
 						line-height: 25px;
 						font-weight: 700;
 					}
-					&__month {					
+					&--month {					
 						line-height: 12px;
 						font-weight: 800;
 						font-size: 15px;
 					}
 				}
 				&__text {
-					&__topic {
+					&--topic {
 						font-weight: 700;
 						font-size: 16px;
 					}
-					&__author {
+					&--author {
 						font-size: 12px;
 					}
 				}							
@@ -640,10 +636,8 @@ body {
 /* contact to us */
 
 	.contact-to-us {		
-		.contact-box {			
-			&__text {
-				padding-right: 70px;
-			}
+		.contact__address {			
+			padding-right: 70px;
 		}
 	}
 }
@@ -700,7 +694,7 @@ body {
 			&__buttons {
 				padding-top: 0;
 				padding-left: 0;
-				&__box {
+				&--box {
 					width: 100%;
 					height: 100px;
 				}
@@ -710,7 +704,7 @@ body {
 				height: auto;
 				background: none;
 				text-align: center;
-				&__head {					
+				&--head {					
 					margin-bottom: 50px;
 				}
 			}
@@ -724,29 +718,27 @@ body {
 
 	.contact-to-us {
 		padding: 100px 0;
-		.contact-text {
-			&__p {
+		.contact__text {
+			&--p {
 				margin: 0;
 			}
 		}
-		.contact-box {
-			&__form {
-				width: 100%;
-				&__input {
-					width: 100%;					
-				}
-				&__textarea {
-					width: 100%;					
-				}
+		.contact__form {
+			width: 100%;
+			&--input {
+				width: 100%;					
 			}
-			&__text {
-				padding-right: 0;
+			&--textarea {
+				width: 100%;					
+			}
+		}
+		.contact__address {
+			padding-right: 0;
+			color: #fff;
+			padding-top: 50px;
+			text-align: center;
+			&--p {
 				color: #fff;
-				padding-top: 50px;
-				text-align: center;
-				&__p {
-					color: #fff;
-				}
 			}
 		}
 	}
@@ -794,10 +786,10 @@ body {
 /* subscribe to us */
 
 	.subscribe-to-us {
-		.subscribe__box {
+		.subscribe {
 			margin-left: 40px;
 			&__form {
-				&__btn {
+				&--btn {
 					margin-top: 20px;
 					margin-left: 0;
 				}
@@ -811,21 +803,20 @@ body {
 /* blog */
 
 	.blog {
-		padding: 100px 0;
-		
+		padding: 100px 0;		
 		&__box {
-			&__image {
+			.blog__image {
 				margin: 10px 0;	
-				&__img {
+				&--img {
 					width: 600px;
 				}
-				&__date {
-					&__nr {					
+				&--date {
+					&--nr {					
 						font-size: 44px;
 						line-height: 45px;
 						font-weight: 700;
 					}
-					&__month {					
+					&--month {					
 						line-height: 30px;
 						font-weight: 800;
 						font-size: 35px;
@@ -833,11 +824,11 @@ body {
 				}
 				&__text {					
 					padding: 50px 30px 30px;
-					&__topic {
+					&--topic {
 						font-weight: 700;
 						font-size: 35px;
 					}
-					&__author {
+					&--author {
 						font-size: 16px;
 					}
 				}							
@@ -904,7 +895,7 @@ body {
 	.gallery {
 		padding: 100px 0;
 		.gallery__text {
-			&__p {
+			&--p {
 				padding: 0 0 45px;
 			}
 		}
@@ -925,15 +916,15 @@ body {
 	.subscribe-to-us {
 		background-image: none;
 		background-color: #fff;
-		.subscribe__box {
-			&__p {
+		.subscribe {
+			&--p {
 				width: 100%;
 			}
 			&__form {
-				&__input {
+				&--input {
 					width: 100%;
 				}
-				&__btn {
+				&--btn {
 					margin-top: 20px;
 					margin-left: 0;
 				}
@@ -949,23 +940,23 @@ body {
 	.blog {
 		padding: 100px 0;
 		&__text {
-			&__p {
+			&--p {
 				padding: 0 0 45px;
 			}
 		}
 		&__box {
-			&__image {
+			.blog__image {
 				margin: 10px 0;	
-				&__date {
+				&--date {
 					padding: 0.7%;
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					&__nr {
+					&--nr {
 						font-size: 30px;
 						line-height: 25px;
 					}
-					&__month {
+					&--month {
 						font-size: 21px;
 						line-height: 27px;
 					}
@@ -980,8 +971,8 @@ body {
 /* contact to us */
 
 	.contact-to-us {
-		.contact-text {
-			&__p {
+		.contact__text {
+			&--p {
 				padding: 0 10px 30px;				
 			}
 		}
@@ -1022,12 +1013,12 @@ body {
 	.blog {
 		&__box {
 			&__image {
-				&__date {
-					&__nr {
+				&--date {
+					&--nr {
 						font-size: 24px;
 						line-height: 18.5px;
 					}
-					&__month {
+					&--month {
 						font-size: 16px;
 						line-height: 23px;
 					}
