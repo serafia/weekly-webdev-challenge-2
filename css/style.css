@@ -66,14 +66,8 @@ body {
       left: 0;
       background-color: red;
       visibility: hidden; }
-    .navbar-collapse .nav-link:hover .nav-link__line {
-      visibility: visible;
-      animation: navLink 0.5s 1; }
   .navbar-collapse .active .nav-link__line {
     visibility: visible;
-    animation: navLink 0.5s 1; }
-  .navbar-collapse .nav-link:not(.active) .nav-link__line {
-    visibility: hidden;
     animation: navLink 0.5s 1; }
 
 /* jumbotron */
@@ -276,52 +270,38 @@ body {
     padding: 0 34% 30px;
     margin: 0; }
   .contact-to-us .contact__form {
-    height: 445px;
+    height: 500px;
     font-size: 14px; }
     .contact-to-us .contact__form--input {
+      height: 50px;
+      padding: 5px 15px; }
+    .contact-to-us .contact__form--textarea {
+      height: 250px;
+      padding: 15px 15px;
+      resize: none; }
+    .contact-to-us .contact__form--btn {
+      background-color: #00c4c3; }
+    .contact-to-us .contact__form .inputs {
       width: 500px;
       max-width: 500px;
-      height: 50px;
-      padding: 5px 15px;
       background-color: rgba(0, 196, 195, 0.5);
       border: none;
       color: #fff;
       font-weight: 500; }
-    .contact-to-us .contact__form--textarea {
-      width: 500px;
-      max-width: 500px;
-      height: 250px;
-      padding: 15px 15px;
-      background-color: rgba(0, 196, 195, 0.5);
-      border: none;
-      color: #fff;
-      font-weight: 500;
-      resize: none; }
-    .contact-to-us .contact__form .contact-input::placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact__form .contact-input:focus {
-      border-left: 5px solid #355B82;
-      outline: none;
-      padding-left: 10px; }
-    .contact-to-us .contact__form .contact-input:hover {
-      border-left: 5px solid #355B82;
-      outline: none;
-      padding-left: 10px; }
+      .contact-to-us .contact__form .inputs::placeholder {
+        color: #fff;
+        font-weight: 300; }
+      .contact-to-us .contact__form .inputs:focus {
+        border-left: 5px solid #355B82;
+        outline: none;
+        padding-left: 10px; }
+      .contact-to-us .contact__form .inputs:hover {
+        border-left: 5px solid #355B82;
+        outline: none;
+        padding-left: 10px; }
     .contact-to-us .contact__form .contact-input:valid {
       background-color: #00c4c3;
       outline: none; }
-    .contact-to-us .contact__form .phone-input::placeholder {
-      color: #fff;
-      font-weight: 300; }
-    .contact-to-us .contact__form .phone-input:focus {
-      border-left: 5px solid #355B82;
-      outline: none;
-      padding-left: 10px; }
-    .contact-to-us .contact__form .phone-input:hover {
-      border-left: 5px solid #355B82;
-      outline: none;
-      padding-left: 10px; }
     .contact-to-us .contact__form .fulfill {
       background-color: #00c4c3;
       outline: none; }
@@ -347,6 +327,10 @@ body {
       font-weight: 600; }
 
 /*media query */
+@media (min-width: 1200px) {
+  .navbar-collapse .nav-link:hover .nav-link__line {
+    visibility: visible;
+    animation: navLink 0.5s 1; } }
 @media (min-width: 993px) and (max-width: 1199.98px) {
   /* jumbotron */
   .jumbotron-fluid {
@@ -408,18 +392,6 @@ body {
     flex-wrap: wrap;
     justify-content: center; }
 
-  /* navigation 
-  
-  	.navbar {
-  		.navbar-collapse {
-  			.nav-link {
-  				&:hover .nav-link__line {
-  					background-color: transparent;
-  				}
-  			}
-  		}		
-  	}
-  */
   /* about us*/
   .about-us .about__text {
     padding-left: 0;
@@ -449,9 +421,7 @@ body {
       margin: 0; }
     .contact-to-us .contact__form {
       width: 100%; }
-      .contact-to-us .contact__form--input {
-        width: 100%; }
-      .contact-to-us .contact__form--textarea {
+      .contact-to-us .contact__form .inputs {
         width: 100%; }
     .contact-to-us .contact__address {
       padding-right: 0;
