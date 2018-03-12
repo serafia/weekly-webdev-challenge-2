@@ -57,8 +57,13 @@ function phonenumber() {
 	}
 }
 
+
+//hidden menu on mobile devices
+
 $('.collapse .nav-link').click(function() {
-	$('#myNavigation').animate({height: '20px'}, 300, removeClassShow);
+	if($(window).width()<767) {
+		$('#myNavigation').animate({height: '20px'}, 300, removeClassShow);
+	}
 });
 
 function removeClassShow() {
