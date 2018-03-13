@@ -394,7 +394,7 @@ min-height: 865px;
 	}
 }
 .contact__form {
-	height: 500px;
+	height: 550px;
 		font-size: 14px;
 		&--input {
 			height: 50px;
@@ -407,6 +407,7 @@ min-height: 865px;
 		}
 		&--btn {
 			background-color: rgb(0, 196, 195);
+			box-shadow: none;
 		}
 		.inputs {
 			width: 500px;

@@ -270,7 +270,7 @@ body {
     padding: 0 34% 30px;
     margin: 0; }
   .contact-to-us .contact__form {
-    height: 500px;
+    height: 550px;
     font-size: 14px; }
     .contact-to-us .contact__form--input {
       height: 50px;
@@ -280,7 +280,8 @@ body {
       padding: 15px 15px;
       resize: none; }
     .contact-to-us .contact__form--btn {
-      background-color: #00c4c3; }
+      background-color: #00c4c3;
+      box-shadow: none; }
     .contact-to-us .contact__form .inputs {
       width: 500px;
       max-width: 500px;
