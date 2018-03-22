@@ -224,12 +224,13 @@ body {
   .blog__box {
     margin-bottom: 50px; }
     .blog__box .blog__image {
-      position: relative; }
+      position: relative;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6); }
       .blog__box .blog__image--img {
         width: 370px;
         object-fit: cover;
-        filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6)); }
-      .blog__box .blog__image--date {
+        height: 100%; }
+      .blog__box .blog__image__date {
         width: 16.3%;
         height: 18.7%;
         position: absolute;
@@ -239,11 +240,11 @@ body {
         border-radius: 5px;
         text-align: center;
         padding: 7px; }
-        .blog__box .blog__image--date--nr {
+        .blog__box .blog__image__date--nr {
           font-size: 30px;
           line-height: 20px;
           font-weight: 700; }
-        .blog__box .blog__image--date--month {
+        .blog__box .blog__image__date--month {
           line-height: 27px;
           font-weight: 800;
           font-size: 21px; }
@@ -265,9 +266,10 @@ body {
 /* contact to us */
 .contact-to-us {
   background: url("../img/bg_contact.png") left/cover no-repeat;
-  min-height: 865px; }
+  min-height: 865px;
+  padding: 100px 0; }
   .contact-to-us .contact__text--p {
-    padding: 0 34% 30px;
+    padding: 0 34% 40px;
     margin: 0; }
   .contact-to-us .contact__form {
     height: 550px;
@@ -331,7 +333,13 @@ body {
 @media (min-width: 1200px) {
   .navbar-collapse .nav-link:hover .nav-link__line {
     visibility: visible;
-    animation: navLink 0.5s 1; } }
+    animation: navLink 0.5s 1; }
+
+  /* blog */
+  .blog__box .blog__image {
+    transition: .3s; }
+    .blog__box .blog__image:hover {
+      box-shadow: 0 5px 15px #000; } }
 @media (min-width: 993px) and (max-width: 1199.98px) {
   /* jumbotron */
   .jumbotron-fluid {
@@ -368,13 +376,13 @@ body {
   .blog__box .blog__image--img {
     width: 315px;
     height: auto; }
-  .blog__box .blog__image--date {
+  .blog__box .blog__image__date {
     padding: 4px; }
-    .blog__box .blog__image--date--nr {
+    .blog__box .blog__image__date--nr {
       font-size: 25px;
       line-height: 25px;
       font-weight: 700; }
-    .blog__box .blog__image--date--month {
+    .blog__box .blog__image__date--month {
       line-height: 12px;
       font-weight: 800;
       font-size: 15px; }
@@ -415,6 +423,15 @@ body {
       .our-services .services__image--head {
         margin-bottom: 50px; }
 
+  /* subscribe to us */
+  .subscribe-to-us .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px; }
+    .subscribe-to-us .subscribe__form--btn {
+      margin-left: 0; }
+
   /* contact to us */
   .contact-to-us {
     padding: 100px 0; }
@@ -452,9 +469,8 @@ body {
   /* subscribe to us */
   .subscribe-to-us .subscribe {
     margin-left: 40px; }
-    .subscribe-to-us .subscribe__form--btn {
-      margin-top: 20px;
-      margin-left: 0; }
+    .subscribe-to-us .subscribe__form--input {
+      width: 80%; }
 
   /* blog */
   .blog {
@@ -463,11 +479,11 @@ body {
       margin: 10px 0; }
       .blog__box .blog__image--img {
         width: 600px; }
-      .blog__box .blog__image--date--nr {
+      .blog__box .blog__image__date--nr {
         font-size: 44px;
         line-height: 45px;
         font-weight: 700; }
-      .blog__box .blog__image--date--month {
+      .blog__box .blog__image__date--month {
         line-height: 30px;
         font-weight: 800;
         font-size: 35px; }
@@ -524,9 +540,6 @@ body {
       width: 100%; }
     .subscribe-to-us .subscribe__form--input {
       width: 100%; }
-    .subscribe-to-us .subscribe__form--btn {
-      margin-top: 20px;
-      margin-left: 0; }
 
   /* blog */
   .blog {
@@ -535,15 +548,15 @@ body {
       padding: 0 0 45px; }
     .blog__box .blog__image {
       margin: 10px 0; }
-      .blog__box .blog__image--date {
+      .blog__box .blog__image__date {
         padding: 0.7%;
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .blog__box .blog__image--date--nr {
+        .blog__box .blog__image__date--nr {
           font-size: 30px;
           line-height: 25px; }
-        .blog__box .blog__image--date--month {
+        .blog__box .blog__image__date--month {
           font-size: 21px;
           line-height: 27px; }
 
@@ -563,9 +576,9 @@ body {
     top: 5%; }
 
   /* blog */
-  .blog__box__image--date--nr {
+  .blog__box__image__date--nr {
     font-size: 24px;
     line-height: 18.5px; }
-  .blog__box__image--date--month {
+  .blog__box__image__date--month {
     font-size: 16px;
     line-height: 23px; } }

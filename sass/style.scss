@@ -327,14 +327,16 @@ body {
 	}
 	&__box {
 		margin-bottom: 50px;
+		
 		.blog__image {
 			position: relative;
+			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
 			&--img {
 				width: 370px;
 				object-fit: cover;
-				filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.6));
+				height: 100%;
 			}
-			&--date {
+			&__date {
 				width: 16.3%;
 				height: 18.7%;
 				position: absolute;
@@ -385,16 +387,18 @@ body {
 /* contact to us */
 
 .contact-to-us {
-background: url('../img/bg_contact.png') left/cover no-repeat;
-min-height: 865px;
-.contact__text {
-	&--p {
-		padding: 0 34% 30px;
-		margin: 0;
+	background: url('../img/bg_contact.png') left/cover no-repeat;
+	min-height: 865px;
+	padding: 100px 0;
+	.contact__text {
+
+		&--p {
+			padding: 0 34% 40px;
+			margin: 0;
+		}
 	}
-}
-.contact__form {
-	height: 550px;
+	.contact__form {
+		height: 550px;
 		font-size: 14px;
 		&--input {
 			height: 50px;
@@ -490,6 +494,19 @@ min-height: 865px;
 					animation: navLink 0.5s 1;
 				}			
 			}
+		}
+	}
+
+	/* blog */
+
+	.blog {
+		&__box {
+			.blog__image {	
+				transition: .3s;					
+				&:hover {
+					box-shadow: 0 5px 15px #000;
+				}			
+			}			
 		}
 	}
 }
@@ -593,7 +610,7 @@ min-height: 865px;
 					width: 315px;
 					height: auto;
 				}
-				&--date {
+				&__date {
 					padding: 4px;
 					&--nr {					
 						font-size: 25px;
@@ -689,6 +706,24 @@ min-height: 865px;
 
 
 
+/* subscribe to us */
+
+	.subscribe-to-us {
+		.subscribe {
+			&__form {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 130px;
+				&--btn {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+
+
 /* contact to us */
 
 	.contact-to-us {
@@ -761,9 +796,8 @@ min-height: 865px;
 		.subscribe {
 			margin-left: 40px;
 			&__form {
-				&--btn {
-					margin-top: 20px;
-					margin-left: 0;
+				&--input {
+					width: 80%;
 				}
 			}
 		}
@@ -782,7 +816,7 @@ min-height: 865px;
 				&--img {
 					width: 600px;
 				}
-				&--date {
+				&__date {
 					&--nr {					
 						font-size: 44px;
 						line-height: 45px;
@@ -896,10 +930,6 @@ min-height: 865px;
 				&--input {
 					width: 100%;
 				}
-				&--btn {
-					margin-top: 20px;
-					margin-left: 0;
-				}
 			}
 		}
 	}
@@ -919,7 +949,7 @@ min-height: 865px;
 		&__box {
 			.blog__image {
 				margin: 10px 0;	
-				&--date {
+				&__date {
 					padding: 0.7%;
 					display: flex;
 					flex-direction: column;
@@ -985,7 +1015,7 @@ min-height: 865px;
 	.blog {
 		&__box {
 			&__image {
-				&--date {
+				&__date {
 					&--nr {
 						font-size: 24px;
 						line-height: 18.5px;
