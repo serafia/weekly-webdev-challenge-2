@@ -9,7 +9,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target="#navbar">
+<body data-spy="scroll" data-target="#navbar" data-offset="200">
 		
 <!-- Navigation -->
 		<nav id="navbar" class="navbar navbar-light w-100 navbar-expand-sm position-fixed fixed-top">
@@ -127,9 +127,25 @@
 				<img src="img/gallery4.png" class="img-fluid gallery__img gallery__box2--img" alt="milkshake">
 				<img src="img/gallery5.png" class="img-fluid gallery__img gallery__box2--img" alt="pomegranate">				
 			</div>
-			<div class="d-flex justify-content-center gallery__button">
-				<button class="btn gallery__button--btn">view more</button>
+			<div id="galleryViewMoreContent" class="d-none mt-5 animate">
+				<div class="d-flex justify-content-center justify-content-lg-between gallery__box1">
+				<div class="gallery__box1__image1">
+					<img src="img/gallery5.png" class="img-fluid gallery__img gallery__box1__image1--img" alt="peach">
+				</div>
+				<div class="d-flex flex-column  justify-content-between gallery__box1__image2">
+					<img src="img/blog2.png" class="img-fluid gallery__img gallery__box1__image2--img" alt="blueberries">
+					<img src="img/gallery1.png" class="img-fluid gallery__img gallery__box1__image2--img" alt="blackberries">
+				</div>
 			</div>
+				<div class="d-flex justify-content-center justify-content-lg-between gallery__box2">
+					<img src="img/gallery4.png" class="img-fluid gallery__img gallery__box2--img" alt="milkshake">
+					<img src="img/blog3.png" class="img-fluid gallery__img gallery__box2--img" alt="pomegranate">				
+				</div>
+			</div>
+			<div class="d-flex justify-content-center gallery__button">
+				<button id="galleryViewMore" class="btn gallery__button--btn">view more</button>
+			</div>
+			
 			
 		</div>
 	</section>
@@ -193,8 +209,43 @@
 					</div>
 				</div>				
 			</div>
+			<div id="blogViewMoreContent" class="justify-content-center justify-content-lg-between blog__box d-none animate">
+				<div class="blog__image">
+					<img src="img/gallery3.png" class="img-fluid blog__image--img" alt="green smoothie">
+					<div class="text-uppercase text-white blog__image__date">
+						<p class="m-0 blog__image__date--nr">20</p>
+						<p class="m-0 blog__image__date--month">nov</p>
+					</div>
+					<div class="text-white blog__image__text">
+						<p class="blog__image__text--topic">Green Smoothies: To Much of a Good Thing?</p>
+						<p class="m-0 blog__image__text--author">By Auskteez - 2 hours ago</p>
+					</div>
+				</div>
+				<div class="blog__image">
+					<img src="img/blog1.png" class="img-fluid blog__image--img" alt="green pea soup">
+					<div class="text-uppercase text-white blog__image__date">
+						<p class="m-0 blog__image__date--nr">14</p>
+						<p class="m-0 blog__image__date--month">nov</p>
+					</div>
+					<div class="text-white blog__image__text">
+						<p class="blog__image__text--topic">Growing Food and "Thirst" for Innovation</p>
+						<p class="m-0 blog__image__text--author">By Auskteez - 3 hours ago</p>
+					</div>
+				</div>
+				<div class="blog__image">
+					<img src="img/gallery2.png" class="img-fluid blog__image--img" alt="raspberries">
+					<div class="text-uppercase text-white blog__image__date">
+						<p class="m-0 blog__image__date--nr">10</p>
+						<p class="m-0 blog__image__date--month">nov</p>
+					</div>
+					<div class="text-white blog__image__text">
+						<p class="blog__image__text--topic">Pesticides & Food: What You Need to Know</p>
+						<p class="m-0 blog__image__text--author">By Auskteez - 6 hours ago</p>
+					</div>
+				</div>				
+			</div>
 			<div class="d-flex justify-content-center blog__button">
-				<button class="btn blog__button--btn">view more</button>
+				<button id="blogViewMore" class="btn blog__button--btn">view more</button>
 			</div>
 		</div>
 	</section>
