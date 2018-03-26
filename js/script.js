@@ -3,7 +3,7 @@ function changeNavbar() {
 	//console.log(scrollPosition);
 	if(scrollPosition > 20) {
 		$('#navbar').addClass('fixed-nav');
-		$('#navbar').css('padding', '2.5% 15px');
+		$('#navbar').css('padding', '0.5% 15px');
 
 	} else {
 		$('#navbar').css('padding', '5% 15px');
@@ -14,7 +14,6 @@ function changeNavbar() {
 changeNavbar();
 $(window).scroll(function() {
 	changeNavbar();
-	$('.nav-link').not('.active').blur();
 });
 
 //scrollspy
@@ -23,7 +22,9 @@ $('body').scrollspy({ target: '#navbar' });
 
 
 //smothscroll
-
+var menu = $('#navbar');
+//var menuHeight = menu.innerHeight()/2 - 50;
+//console.log(menuHeight);
 $('a[href*="#"]').not('[href="#"]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -32,7 +33,7 @@ $('a[href*="#"]').not('[href="#"]').click(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
              $('html,body').animate ({
-                 scrollTop: target.offset().top
+                 scrollTop: (target.offset().top)
              }, 1000);
             return false;
         }
@@ -69,3 +70,31 @@ $('.collapse .nav-link').click(function() {
 function removeClassShow() {
 	$(this).removeClass('show');
 }
+
+
+//view more buttons
+ 
+ //gallery
+
+var galleryViewMore = $('#galleryViewMore');
+var galleryViewMoreContent = $('#galleryViewMoreContent');
+console.log(galleryViewMore);
+galleryViewMore.on('click', function() {
+	//alert("view more");
+	galleryViewMoreContent.removeClass('d-none');
+	$(this).addClass('d-none');
+});
+
+ //blog
+
+var blogViewMore = $('#blogViewMore');
+var blogViewMoreContent = $('#blogViewMoreContent');
+blogViewMore.on('click', function() {
+	//alert("view more");
+	blogViewMoreContent.removeClass('d-none');
+	blogViewMoreContent.addClass('d-flex');
+	$(this).addClass('d-none');
+});
+	
+
+
