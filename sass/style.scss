@@ -48,7 +48,7 @@ body {
 .head2 {
 	font-size: 90px;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 21px;
 }
 .paragraf {
 	line-height: 28px;
@@ -70,7 +70,7 @@ body {
 /* navigation */
 
 .navbar {
-	max-height: 62px;
+	max-height: 75px;
 	padding: 5% 15px;
 	transition: 0.3s;
 	&-collapse {
@@ -177,6 +177,7 @@ body {
 			}			
 			&--p {				
 				margin-bottom: 12px;
+				font-weight: 300;
 			}
 		}
 	}
@@ -188,12 +189,16 @@ body {
 /* our services */
 
 .our-services {
-	min-height: 790px;
+	min-height: 750px;
 	background-color: #70C0FF;
+	padding: 80px 0;
 	.services {
+		margin-bottom: 50px;
+		margin-top: 20px;
 		&__buttons {
-				padding-top: 8.55%;
-				padding-left: 7.27%;
+				margin-top: 8.55%;
+				margin-left: 7.27%;
+
 			&--box {
 				width: 400px;
 				max-width: 400px;
@@ -241,7 +246,7 @@ body {
 .gallery {
 	background-color: #FEE92E;
 	min-height: 1535px;
-	padding: 100px 0;
+	padding: 85px 0;
 	&__text {
 		&--p {
 			padding: 0 25.6% 45px;
@@ -287,10 +292,10 @@ body {
 /* subscribe to us */
 
 .subscribe-to-us {
-	min-height: 500px;
+	min-height: 505px;
 	background: url('../img/bg_subscribe.png') center no-repeat;
 	.subscribe {
-		margin-bottom: 38px;
+		margin-bottom: 27px;
 		&--head {
 			font-size: 40px;
 			font-weight: 700;
@@ -329,8 +334,8 @@ body {
 
 .blog {
 	background-color: #B07CF8;
-	min-height: 865px;
-	padding: 100px 0;
+	min-height: 855px;
+	padding: 85px 0;
 	&__text {
 		&--p {
 			padding: 0 24% 45px;
@@ -400,10 +405,9 @@ body {
 
 .contact-to-us {
 	background: url('../img/bg_contact.png') left/cover no-repeat;
-	min-height: 865px;
-	padding: 100px 0;
+	min-height: 860px;
+	padding: 80px 0;
 	.contact__text {
-
 		&--p {
 			padding: 0 34% 40px;
 			margin: 0;
@@ -690,6 +694,7 @@ body {
 /* about us*/
 
 	.about-us {
+		min-height: 600px;
 		.about {
 			&__text {
 				padding-left: 0;
@@ -707,8 +712,8 @@ body {
 		.services {
 			flex-direction: column-reverse;
 			&__buttons {
-				padding-top: 0;
-				padding-left: 0;
+				margin-top: 0;
+				margin-left: 0;
 				&--box {
 					width: 100%;
 					height: 100px;
@@ -915,10 +920,12 @@ body {
 			}
 		}		
 	}
+
+
+
+
+
 	
-
-
-
 /* gallery */
 
 	.gallery {
