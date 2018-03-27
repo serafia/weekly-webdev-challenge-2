@@ -18,12 +18,13 @@ $(window).scroll(function() {
 
 //scrollspy
 
-$('body').scrollspy({ target: '#navbar' });
-
-
+//$('body').scrollspy({ target: '#navbar' });
+$('#navbar').scrollspy({
+    offset: 100
+  });
 //smothscroll
 var menu = $('#navbar');
-//var menuHeight = menu.innerHeight()/2 - 50;
+var menuHeight = menu.innerHeight()/2 - 10;
 //console.log(menuHeight);
 $('a[href*="#"]').not('[href="#"]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -33,7 +34,7 @@ $('a[href*="#"]').not('[href="#"]').click(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
              $('html,body').animate ({
-                 scrollTop: (target.offset().top)
+                 scrollTop: (target.offset().top - menuHeight)
              }, 1000);
             return false;
         }
