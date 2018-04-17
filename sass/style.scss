@@ -72,7 +72,7 @@ body {
 .navbar {
 	max-height: 75px;
 	padding: 5% 15px;
-	transition: 0.3s;
+	transition: 1s;
 	&-collapse {
 		.nav-link {
 			font-weight: 700;
@@ -259,12 +259,14 @@ body {
 			&--img {
 				width: 745px;
 				height: 560px;
+				cursor: pointer;
 			}
 		}
 		&__image2 {
 			&--img {
 				width: 400px;
 				height: 267px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -273,6 +275,7 @@ body {
 		&--img {
 			width: 572px;
 			height: 420px;
+			cursor: pointer;
 		}
 	}
 	&__img {
@@ -344,7 +347,7 @@ body {
 	}
 	&__box {
 		margin-bottom: 50px;
-		
+		cursor: pointer;		
 		.blog__image {
 			position: relative;
 			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
@@ -392,6 +395,7 @@ body {
 		}
 	}
 	&__button {
+
 		&--btn {
 			background-color: #F82B3C;
 		}
@@ -436,6 +440,7 @@ body {
 			border: none;
 			color: #fff;
 			font-weight: 500;
+			transition: .6s;
 			&::placeholder {
 				color: #fff;
 				font-weight: 300;
@@ -807,10 +812,16 @@ body {
 		&__box1 {
 			margin-bottom: 0;
 		}
+		&__box2 {
+			margin-bottom: 0;
+		}
 		&__img {
 			margin: 10px 0;
 			width: 650px;
 			height: 450px;
+		}
+		&__button {
+			margin-top: 50px;
 		}
 		
 	}
@@ -839,6 +850,7 @@ body {
 	.blog {
 		padding: 100px 0;		
 		&__box {
+			margin-bottom: 0;
 			.blog__image {
 				margin: 10px 0;	
 				&--img {
@@ -867,6 +879,9 @@ body {
 					}
 				}							
 			}
+		}
+		&__button {
+			margin-top: 50px;
 		}		
 	}
 }
@@ -938,9 +953,15 @@ body {
 		&__box1 {
 			margin-bottom: 0;
 		}
+		&__box2 {
+			margin-bottom: 0;
+		}
 		&__img {
 			margin: 10px 0;
 			height: 220px;
+		}
+		&__button {
+			margin-top: 50px;
 		}		
 	}
 
@@ -977,6 +998,7 @@ body {
 			}
 		}
 		&__box {
+			margin-bottom: 0;
 			.blog__image {
 				margin: 10px 0;	
 				&__date {
@@ -994,6 +1016,9 @@ body {
 					}
 				}			
 			}
+		}
+		&__button {
+			margin-top: 50px;
 		}
 	}
 

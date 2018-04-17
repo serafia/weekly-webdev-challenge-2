@@ -26,7 +26,7 @@ $('#navbar').scrollspy({
 
 //smothscroll
 var menu = $('#navbar');
-var menuHeight = menu.innerHeight()/2 - 20;
+var menuHeight = menu.innerHeight()/2 - 10;
 //console.log(menuHeight);
 $('a[href*="#"]').not('[href="#"]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 

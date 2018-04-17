@@ -60,7 +60,7 @@ body {
 .navbar {
   max-height: 75px;
   padding: 5% 15px;
-  transition: 0.3s; }
+  transition: 1s; }
   .navbar-collapse .nav-link {
     font-weight: 700;
     letter-spacing: -0.4px;
@@ -185,15 +185,18 @@ body {
     margin-bottom: 25px; }
     .gallery__box1__image1--img {
       width: 745px;
-      height: 560px; }
+      height: 560px;
+      cursor: pointer; }
     .gallery__box1__image2--img {
       width: 400px;
-      height: 267px; }
+      height: 267px;
+      cursor: pointer; }
   .gallery__box2 {
     margin-bottom: 50px; }
     .gallery__box2--img {
       width: 572px;
-      height: 420px; }
+      height: 420px;
+      cursor: pointer; }
   .gallery__img {
     filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
     object-fit: cover; }
@@ -238,7 +241,8 @@ body {
     padding: 0 24% 45px;
     margin: 0; }
   .blog__box {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    cursor: pointer; }
     .blog__box .blog__image {
       position: relative;
       box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6); }
@@ -306,7 +310,8 @@ body {
       background-color: rgba(0, 196, 195, 0.5);
       border: none;
       color: #fff;
-      font-weight: 500; }
+      font-weight: 500;
+      transition: .6s; }
       .contact-to-us .contact__form .inputs::placeholder {
         color: #fff;
         font-weight: 300; }
@@ -485,10 +490,14 @@ body {
     padding: 100px 0; }
     .gallery__box1 {
       margin-bottom: 0; }
+    .gallery__box2 {
+      margin-bottom: 0; }
     .gallery__img {
       margin: 10px 0;
       width: 650px;
       height: 450px; }
+    .gallery__button {
+      margin-top: 50px; }
 
   /* subscribe to us */
   .subscribe-to-us .subscribe {
@@ -499,25 +508,29 @@ body {
   /* blog */
   .blog {
     padding: 100px 0; }
-    .blog__box .blog__image {
-      margin: 10px 0; }
-      .blog__box .blog__image--img {
-        width: 600px; }
-      .blog__box .blog__image__date--nr {
-        font-size: 44px;
-        line-height: 45px;
-        font-weight: 700; }
-      .blog__box .blog__image__date--month {
-        line-height: 30px;
-        font-weight: 800;
-        font-size: 35px; }
-      .blog__box .blog__image__text {
-        padding: 50px 30px 30px; }
-        .blog__box .blog__image__text--topic {
-          font-weight: 700;
+    .blog__box {
+      margin-bottom: 0; }
+      .blog__box .blog__image {
+        margin: 10px 0; }
+        .blog__box .blog__image--img {
+          width: 600px; }
+        .blog__box .blog__image__date--nr {
+          font-size: 44px;
+          line-height: 45px;
+          font-weight: 700; }
+        .blog__box .blog__image__date--month {
+          line-height: 30px;
+          font-weight: 800;
           font-size: 35px; }
-        .blog__box .blog__image__text--author {
-          font-size: 16px; } }
+        .blog__box .blog__image__text {
+          padding: 50px 30px 30px; }
+          .blog__box .blog__image__text--topic {
+            font-weight: 700;
+            font-size: 35px; }
+          .blog__box .blog__image__text--author {
+            font-size: 16px; }
+    .blog__button {
+      margin-top: 50px; } }
 @media (max-width: 575.98px) {
   /* general */
   .head2 {
@@ -552,9 +565,13 @@ body {
       padding: 0 0 45px; }
     .gallery__box1 {
       margin-bottom: 0; }
+    .gallery__box2 {
+      margin-bottom: 0; }
     .gallery__img {
       margin: 10px 0;
       height: 220px; }
+    .gallery__button {
+      margin-top: 50px; }
 
   /* subscribe to us */
   .subscribe-to-us {
@@ -570,19 +587,23 @@ body {
     padding: 100px 0; }
     .blog__text--p {
       padding: 0 0 45px; }
-    .blog__box .blog__image {
-      margin: 10px 0; }
-      .blog__box .blog__image__date {
-        padding: 0.7%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        .blog__box .blog__image__date--nr {
-          font-size: 30px;
-          line-height: 25px; }
-        .blog__box .blog__image__date--month {
-          font-size: 21px;
-          line-height: 27px; }
+    .blog__box {
+      margin-bottom: 0; }
+      .blog__box .blog__image {
+        margin: 10px 0; }
+        .blog__box .blog__image__date {
+          padding: 0.7%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .blog__box .blog__image__date--nr {
+            font-size: 30px;
+            line-height: 25px; }
+          .blog__box .blog__image__date--month {
+            font-size: 21px;
+            line-height: 27px; }
+    .blog__button {
+      margin-top: 50px; }
 
   /* contact to us */
   .contact-to-us .contact__text--p {
