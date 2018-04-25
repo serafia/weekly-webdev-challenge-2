@@ -34,16 +34,18 @@ body {
 	height: 55px;
 	cursor: pointer;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-	border-radius: 0;
+	border-radius: 2px;
 	border: none;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 300;
 	text-transform: uppercase;
+	padding: 16px;
 	transition: 0.3s;
 }
 .btn:hover {
 	transform: scale(1.1,1.1);
+	color: #fff;
 }
 .head2 {
 	font-size: 90px;
@@ -147,6 +149,7 @@ body {
 					position: relative;
 					font-size: 40px;
 					animation: scroll 1.2s infinite;
+					color: #000;
 				}				
 			}
 		}
@@ -198,7 +201,6 @@ body {
 		&__buttons {
 				margin-top: 8.55%;
 				margin-left: 7.27%;
-
 			&--box {
 				width: 400px;
 				max-width: 400px;
@@ -206,22 +208,25 @@ body {
 				display: flex;
 				box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.6);
 				margin-bottom: 20px;
+				transition: .4s;
 				&__btn {
 					cursor: pointer;
 					border: none;
 					background-color: #fff;
-				}
-				&__btn {
 					&--text {
 						width: 75%;					
 						font-weight: 700;
 						padding-left: 15px;
 						padding-right: 15px;
 						font-size: 18px;
+						border-bottom-left-radius: 2px;
+						border-top-left-radius: 2px;
 					}
 					&--icon {
 						width: 25%;						
 						border-left: 1px solid #000;
+						border-bottom-right-radius: 2px;
+						border-top-right-radius: 2px;
 					}
 				}
 			}
@@ -281,6 +286,7 @@ body {
 	&__img {
 		filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.6));
 		object-fit: cover;
+		transition: .4s;
 	}
 	&__button {
 		&--btn {
@@ -351,6 +357,7 @@ body {
 		.blog__image {
 			position: relative;
 			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
+			transition: .4s;
 			&--img {
 				width: 370px;
 				object-fit: cover;
@@ -430,8 +437,9 @@ body {
 			resize: none;
 		}
 		&--btn {
-			background-color: rgb(0, 196, 195);
+			background-color: rgb(0, 196, 195);	
 			box-shadow: none;
+			opacity: 0;
 		}
 		.inputs {
 			width: 500px;
@@ -457,13 +465,14 @@ body {
 			}
 			
 		}
-		.contact-input:valid {
+		.contact-input:valid, 
+		.fulfill {
 			background-color: rgb(0, 196, 195);
 			outline: none;					
 		}
-		.fulfill {
-			background-color: rgb(0, 196, 195);
-			outline: none;
+		.contact-input:valid ~ .contact__form--btn,
+		.fulfill ~ .contact__form--btn {
+			opacity: 1;				
 		}
 	}
 	.contact__address {
@@ -507,6 +516,9 @@ body {
 
 
 @media (min-width: 1200px) {
+
+
+/* navigation */
 	.navbar {
 		&-collapse {
 			.nav-link {			
@@ -518,12 +530,39 @@ body {
 		}
 	}
 
-	/* blog */
+
+
+
+/* our services */
+
+	.our-services {
+		.services {
+			&__buttons {
+				&--box {
+					&:hover {
+						box-shadow: 0px 3px 9px rgba(0, 0, 0, 1);
+					}
+				}
+			}
+		}
+	}
+
+/* gallery */
+
+	.gallery {
+		&__img {
+			&:hover {
+				filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 1));
+			}
+		}
+	}
+
+
+/* blog */
 
 	.blog {
 		&__box {
-			.blog__image {	
-				transition: .3s;					
+			.blog__image {						
 				&:hover {
 					box-shadow: 0 5px 15px #000;
 				}			
@@ -531,16 +570,7 @@ body {
 		}
 	}
 
-	/* gallery */
-
-	.gallery {
-		&__img {
-			transition: 0.3s;
-			&:hover {
-				filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 1));
-			}
-		}
-	}
+	
 }
 
 
@@ -834,9 +864,12 @@ body {
 	.subscribe-to-us {
 		.subscribe {
 			margin-left: 40px;
+			&--p {
+				width: 70%;
+			}
 			&__form {
 				&--input {
-					width: 80%;
+					width: 70%;
 				}
 			}
 		}
@@ -883,6 +916,13 @@ body {
 		&__button {
 			margin-top: 50px;
 		}		
+	}
+
+
+/* contact to us */
+
+	.contact-to-us {
+		background-position: center;
 	}
 }
 
@@ -1028,6 +1068,7 @@ body {
 /* contact to us */
 
 	.contact-to-us {
+		background-position: center;
 		.contact__text {
 			&--p {
 				padding: 0 10px 30px;				
