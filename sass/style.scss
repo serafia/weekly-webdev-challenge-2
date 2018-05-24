@@ -429,11 +429,11 @@ body {
 		font-size: 14px;
 		&--input {
 			height: 50px;
-			padding: 5px 15px;
+			padding: 5px 15px 5px 10px;
 		}			
 		&--textarea {			
 			height: 250px;
-			padding: 15px 15px;
+			padding: 15px 15px 15px 10px;
 			resize: none;
 		}
 		&--btn {
@@ -446,6 +446,7 @@ body {
 			max-width: 500px;
 			background-color: rgba(0, 196, 195, 0.5);
 			border: none;
+			border-left: 5px solid transparent;
 			color: #fff;
 			font-weight: 500;
 			transition: .6s;
