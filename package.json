@@ -1,6 +1,5 @@
 {
-  "name": "",
-  "version": "",
+  "name": "2",
   "scripts": {
     "test": "npm run test:html",
     "test:html": "glob-run nu-html-checker *.html",
@@ -11,17 +10,34 @@
     "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"npm run watch:browsersync\" ",
     "watch:sass": "sass --watch sass:css",
     "watch:autoprefixer": "onchange -d 100 libs/style.css -- autoprefixer-cli -o libs/style.prefixed.css libs/style.css",
-    "watch:browsersync": "node_modules/.bin/browser-sync start --server --files \"libs/*.css\" \"*.html\""
+    "watch:browsersync": "browser-sync start --server --files \"libs/*.css\" \"*.html\""
   },
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.4",
     "glob-run": "^0.1.6",
-    "html-validator-cli": "^3.2.0",
+    "hoek": "^5.0.3",
+    "html-validator-cli": "^4.0.4",
+    "npm-path": "^2.0.4",
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.2",
     "rimraf": "^2.6.2",
     "vnu-jar": "^17.12.28"
-  }
+  },
+  "description": "in progress\r # weekly-webdev-challenge-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serafia/weekly-webdev-challenge-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serafia/weekly-webdev-challenge-2/issues"
+  },
+  "homepage": "https://github.com/serafia/weekly-webdev-challenge-2#readme"
 }
